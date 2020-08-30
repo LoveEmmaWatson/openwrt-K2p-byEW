@@ -1,0 +1,4144 @@
+Package: adblock
+Version: 4.0.6-1
+Depends: libc, jshn, jsonfilter, coreutils, coreutils-sort, ca-bundle, opkg
+Source: feeds/packages/net/adblock
+SourceName: adblock
+License: GPL-3.0-or-later
+Section: net
+Maintainer: Dirk Brenken <dev@brenken.org>
+Architecture: all
+Installed-Size: 18008
+Filename: adblock_4.0.6-1_all.ipk
+Size: 19002
+SHA256sum: 021d5948d368986be631904f51181f186ccca8161d5869c7a41491031989522c
+Description:  Powerful adblock script to block ad/abuse domains via dnsmasq, unbound, named or kresd.
+ The script supports many domain blacklist sites plus manual black- and whitelist overrides.
+ Please see https://github.com/openwrt/packages/blob/master/net/adblock/files/README.md for further information.
+ 
+
+Package: alsa-lib
+Version: 1.2.2-1
+Depends: libc, kmod-sound-core, libpthread, librt
+Source: feeds/packages/libs/alsa-lib
+SourceName: alsa-lib
+License: LGPL-2.1-or-later
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Ted Hess <thess@kitschensync.net>, Peter Wagner <tripolar@gmx.at>
+Architecture: mipsel_24kc
+Installed-Size: 342446
+Filename: alsa-lib_1.2.2-1_mipsel_24kc.ipk
+Size: 340733
+SHA256sum: bbeebb8d91a261a578b3cc4a9dce334255a8896b2f8dfb3dd43c879b9f254a40
+Description:  This is the library package for alsa, needed by some userspace programs.
+ You must have enabled the ALSA support in the kernel.
+
+Package: alsa-utils
+Version: 1.2.2-1
+Depends: libc, alsa-lib, libncursesw6, libpthread
+Source: feeds/packages/sound/alsa-utils
+SourceName: alsa-utils
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Section: sound
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: mipsel_24kc
+Installed-Size: 114197
+Filename: alsa-utils_1.2.2-1_mipsel_24kc.ipk
+Size: 114056
+SHA256sum: efb463005efd672698e1613f2b466e78a1f18af770b83d424089a99223f68909
+Description:  ALSA (Advanced Linux Sound Architecture) utilities
+
+Package: aria2
+Version: 1.35.0-3
+Depends: libc, zlib, libstdcpp6, libopenssl1.1
+Source: feeds/packages/net/aria2
+SourceName: aria2
+License: GPLv2
+LicenseFiles: COPYING
+Section: net
+Require-User: aria2=6800:aria2=6800
+CPE-ID: cpe:/a:tatsuhiro_tsujikawa:aria2
+Maintainer: Imre Kaloz <kaloz@openwrt.org>, Hsing-Wang Liao <kuoruan@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 507207
+Filename: aria2_1.35.0-3_mipsel_24kc.ipk
+Size: 507264
+SHA256sum: e2ed6383e1c2b14f0aa4731bd83c7caa645f88c4f97b244e8285af0cb47269cc
+Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
+ utility
+
+Package: ariang
+Version: 1.1.6-1
+Depends: libc, aria2, uhttpd
+Source: feeds/packages/net/ariang
+SourceName: ariang
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
+Architecture: all
+Installed-Size: 989090
+Filename: ariang_1.1.6-1_all.ipk
+Size: 989574
+SHA256sum: 51f123138d78bebf7bd3c002ae6c6657590565174eb938fa686cd30a23751eea
+Description:  AriaNg is a web frontend making aria2 easier to use. AriaNg is written in pure html & javascript, thus it does not need any compilers or runtime environment.
+
+Package: attendedsysupgrade-common
+Version: 0.2-1
+Depends: libc, rpcd, rpcd-mod-rpcsys
+Source: feeds/packages/utils/attendedsysupgrade-common
+SourceName: attendedsysupgrade-common
+License: GPL-2.0
+Section: utils
+Maintainer: Paul Spooren <paul@spooren.de>
+Architecture: all
+Installed-Size: 514
+Filename: attendedsysupgrade-common_0.2-1_all.ipk
+Size: 1587
+SHA256sum: 60e3952533cf49564a4b2857244ec1c87f785db06074abae6aec86d65179efe3
+Description:  Common needed files for attendedsysupgrade tool
+ 
+ Manages dependencies and brings settings used by clients.
+ 
+ UCI options:
+ 
+ attendedsysupgrade.server.url
+ URL of compatible upgrade server [1]
+ 
+ attendedsysupgrade.client.upgrade_packages
+ Client should request image also if no new release but new packages upgrade are available.
+ 
+ attendedsysupgrade.client.advanced_mode
+ Offer advanced options like editing packages before request and show additional information.
+ 
+ attendedsysupgrade.client.auto_search
+ Tells the client to automattically search for upgrades
+ This can be done when opening luci or login in to console - depends on client.
+ 
+ [1]: https://github.com/aparcar/gsoc17-attended-sysupgrade
+
+Package: avahi-dbus-daemon
+Version: 0.8-6
+Depends: libc, libavahi-dbus-support, libexpat, librt, libdaemon
+Provides: avahi-daemon
+Source: feeds/packages/libs/avahi
+SourceName: avahi-dbus-daemon
+License: LGPL-2.1-or-later
+LicenseFiles: LICENSE
+Section: net
+CPE-ID: cpe:/a:avahi:avahi
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: mipsel_24kc
+Installed-Size: 36797
+Filename: avahi-dbus-daemon_0.8-6_mipsel_24kc.ipk
+Size: 37884
+SHA256sum: e4677c885e9ed7254e42380641a193191cf7af2915c53963da5cd5481ef493c3
+Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
+ implementation (library). It facilitates
+ service discovery on a local network -- this means that
+ you can plug your laptop or computer into a network and
+ instantly be able to view other people who you can chat with,
+ find printers to print to or find files being shared.
+ This kind of technology is already found in MacOS X
+ (branded 'Rendezvous', 'Bonjour' and sometimes 'ZeroConf')
+ and is very convenient.
+ .
+ This package contains an mDNS/DNS-SD daemon.
+
+Package: bash
+Version: 5.0-4
+Depends: libc, libncurses6, libreadline8
+Source: feeds/packages/utils/bash
+SourceName: bash
+License: GPL-3.0-or-later
+LicenseFiles: COPYING
+Section: utils
+CPE-ID: cpe:/a:gnu:bash
+Maintainer: Marcel Denia <naoir@gmx.net>
+Architecture: mipsel_24kc
+Installed-Size: 268646
+Filename: bash_5.0-4_mipsel_24kc.ipk
+Size: 269481
+SHA256sum: 025076db9ca4f8262ed55d0fc3dfc3caa33083bfc1f3a54f21e9b8a47a4d86cc
+Description:  Bash is an sh-compatible command language interpreter that executes
+ commands read from the standard input or from a file. Bash also
+ incorporates useful features from the Korn and C shells (ksh and csh).
+
+Package: bcp38
+Version: 5-6
+Depends: libc, ipset
+Source: feeds/packages/net/bcp38
+SourceName: bcp38
+Section: net
+Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
+Architecture: all
+Installed-Size: 2071
+Filename: bcp38_5-6_all.ipk
+Size: 3026
+SHA256sum: fe56ac8d7d992725b8306d025cf770b87034aa72f21095d84a9a90799a1807dd
+Description:  bcp38 implements IETF BCP38 for home routers.
+ See https://tools.ietf.org/html/bcp38.
+ 
+ This package provides BCP38 for IPv4 only - IPv6 uses source 
+ specific default routes, so no firewall configuration is needed.
+
+Package: boost-chrono
+Version: 1.73.0-1
+Depends: libc, libstdcpp6, libpthread, librt, boost-system
+Source: feeds/packages/libs/boost
+SourceName: boost-chrono
+License: BSL-1.0
+LicenseFiles: LICENSE_1_0.txt
+Section: libs
+CPE-ID: cpe:/a:boost:boost
+Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 12098
+Filename: boost-chrono_1.73.0-1_mipsel_24kc.ipk
+Size: 12909
+SHA256sum: 9ab54e179985d54f8573d7004d2b48fbba8e27db5b7b0fa32214b8b33a756611
+Description:  This package contains the Boost chrono library.
+
+Package: boost-random
+Version: 1.73.0-1
+Depends: libc, libstdcpp6, libpthread, librt, boost-system
+Source: feeds/packages/libs/boost
+SourceName: boost-random
+License: BSL-1.0
+LicenseFiles: LICENSE_1_0.txt
+Section: libs
+CPE-ID: cpe:/a:boost:boost
+Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 10691
+Filename: boost-random_1.73.0-1_mipsel_24kc.ipk
+Size: 11493
+SHA256sum: 438129601504338186037a913b74112dd35c7e22a079f194c7dc1257c141fdb1
+Description:  This package contains the Boost random library.
+
+Package: boost-system
+Version: 1.73.0-1
+Depends: libc, libstdcpp6, libpthread, librt
+Source: feeds/packages/libs/boost
+SourceName: boost-system
+License: BSL-1.0
+LicenseFiles: LICENSE_1_0.txt
+Section: libs
+CPE-ID: cpe:/a:boost:boost
+Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 1098
+Filename: boost-system_1.73.0-1_mipsel_24kc.ipk
+Size: 1901
+SHA256sum: 17e450e1025a5e3927ba8299e1b60c620ed9014006669f890c528dbe987e8e4a
+Description:  This package contains the Boost system library.
+
+Package: boost
+Version: 1.73.0-1
+Depends: libc, libstdcpp6, libpthread, librt
+Source: feeds/packages/libs/boost
+SourceName: boost
+License: BSL-1.0
+LicenseFiles: LICENSE_1_0.txt
+Section: libs
+CPE-ID: cpe:/a:boost:boost
+Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 105
+Filename: boost_1.73.0-1_mipsel_24kc.ipk
+Size: 1258
+SHA256sum: 5dc73f5b5813d16343fa2b66fcb84aeaab20f5fc0b9f5e18ac4d054c7eacde36
+Description:  This package provides the Boost v1.73.0 libraries.
+ Boost is a set of free, peer-reviewed, portable C++ source libraries.
+ 
+ This package provides the following run-time libraries:
+ - atomic
+ - chrono
+ - container
+ - context
+ - contract
+ - coroutine and coroutine2 (Coroutine is deprecated - use Coroutine2)
+ - date_time
+ - exception
+ - filesystem
+ - fiber
+ - graph
+ - - graph-parallel
+ - iostreams
+ - locale (Requires kernel being compiled with full language support)
+ - log
+ - math
+ - program_options
+ - python3
+ - random
+ - regex
+ - serialization and wserialization
+ - stackstrace
+ - system
+ - thread
+ - timer
+ - type_erasure
+ - wave
+ 
+ There are many more header-only libraries supported by Boost.
+ See more at http://www.boost.org/doc/libs/1_72_0/
+
+Package: certtool
+Version: 3.6.14-1
+Depends: libc, libgnutls
+Source: feeds/packages/libs/gnutls
+SourceName: certtool
+License: LGPL-2.1-or-later
+Section: utils
+CPE-ID: cpe:/a:gnu:gnutls
+Maintainer: Nikos Mavrogiannopoulos <nmav@gnutls.org>
+Architecture: mipsel_24kc
+Installed-Size: 137132
+Filename: certtool_3.6.14-1_mipsel_24kc.ipk
+Size: 137780
+SHA256sum: 6daa96cb7a1f5a911551a8ec18c09d8464918ca115a7caf8f7a10533025f6850
+Description:  GnuTLS is a secure communications library implementing the SSL, TLS
+ and DTLS protocols and technologies around them. It provides a simple
+ C language application programming interface (API) to access the secure
+ communications protocols as well as APIs to parse and write X.509, PKCS12,
+ OpenPGP and other required structures. It is aimed to be portable and
+ efficient with focus on security and interoperability.
+ This package contains the GnuTLS certtool utility.
+
+Package: cgi-io
+Version: 19
+Depends: libc, libubox20191228, libubus20191227
+Source: feeds/packages/net/cgi-io
+SourceName: cgi-io
+License: GPL-2.0-or-later
+Section: net
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: mipsel_24kc
+Installed-Size: 7529
+Filename: cgi-io_19_mipsel_24kc.ipk
+Size: 8311
+SHA256sum: 95c11ea2b10691534e78c5b060ba83f6d652df6a20264dd31fb35f3c9d6d15af
+Description:  This package contains an cgi utility that is useful for up/downloading files
+
+Package: clamav
+Version: 0.102.3-1
+Depends: libc, uclibcxx, libpthread, zlib, libcurl4, libjson-c4, libmilter-sendmail, libopenssl1.1, libltdl7, libpcre2, musl-fts
+Source: feeds/packages/net/clamav
+SourceName: clamav
+License: GPL-2.0-only
+LicenseFiles: COPYING*
+Section: net
+CPE-ID: cpe:/a:clamav:clamav
+Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr> Lucian Cristian <lucian.cristian@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 1250535
+Filename: clamav_0.102.3-1_mipsel_24kc.ipk
+Size: 1247607
+SHA256sum: 1122ec96920122194dc98a74d3c8be1ad68b1b0707e927f710f475582af808d4
+Description:  ClamAV is an open source antivirus engine for detecting trojans,
+ viruses, malware & other malicious threats.
+
+Package: collectd-mod-cpu
+Version: 5.11.0-9
+Depends: libc, collectd
+Source: feeds/packages/utils/collectd
+SourceName: collectd-mod-cpu
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Maintainer: Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
+Architecture: mipsel_24kc
+Installed-Size: 4725
+Filename: collectd-mod-cpu_5.11.0-9_mipsel_24kc.ipk
+Size: 5475
+SHA256sum: 124dc09c74f3a8f9a4af90414bc25fd6c4768ad33fa952f654cfb53888e68299
+Description:  CPU input plugin
+
+Package: collectd-mod-interface
+Version: 5.11.0-9
+Depends: libc, collectd
+Source: feeds/packages/utils/collectd
+SourceName: collectd-mod-interface
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Maintainer: Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
+Architecture: mipsel_24kc
+Installed-Size: 3775
+Filename: collectd-mod-interface_5.11.0-9_mipsel_24kc.ipk
+Size: 4528
+SHA256sum: 825301b4eda54abdadb4ad51039ba146dd19467573da9d9044e52c60bfe90603
+Description:  network interfaces input plugin
+
+Package: collectd-mod-iwinfo
+Version: 5.11.0-9
+Depends: libc, collectd, libiwinfo20200105
+Source: feeds/packages/utils/collectd
+SourceName: collectd-mod-iwinfo
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Maintainer: Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
+Architecture: mipsel_24kc
+Installed-Size: 3864
+Filename: collectd-mod-iwinfo_5.11.0-9_mipsel_24kc.ipk
+Size: 4633
+SHA256sum: 9d7720a70921345256fb9e5de855e48234faa5a57d5859f3541979fba19d5161
+Description:  libiwinfo wireless statistics plugin
+
+Package: collectd-mod-load
+Version: 5.11.0-9
+Depends: libc, collectd
+Source: feeds/packages/utils/collectd
+SourceName: collectd-mod-load
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Maintainer: Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
+Architecture: mipsel_24kc
+Installed-Size: 2253
+Filename: collectd-mod-load_5.11.0-9_mipsel_24kc.ipk
+Size: 3002
+SHA256sum: 911e4cd09eade008f699ad3e439857cac9332de9757172356defa71b8ee5e87d
+Description:  system load input plugin
+
+Package: collectd-mod-memory
+Version: 5.11.0-9
+Depends: libc, collectd
+Source: feeds/packages/utils/collectd
+SourceName: collectd-mod-memory
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Maintainer: Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
+Architecture: mipsel_24kc
+Installed-Size: 2931
+Filename: collectd-mod-memory_5.11.0-9_mipsel_24kc.ipk
+Size: 3690
+SHA256sum: d11e3f2c54c5ef801ff459837d05babcaaaafe0734a39f81afc478ec04259c2c
+Description:  physical memory usage input plugin
+
+Package: collectd-mod-network
+Version: 5.11.0-9
+Depends: libc, collectd
+Source: feeds/packages/utils/collectd
+SourceName: collectd-mod-network
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Maintainer: Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
+Architecture: mipsel_24kc
+Installed-Size: 16067
+Filename: collectd-mod-network_5.11.0-9_mipsel_24kc.ipk
+Size: 16736
+SHA256sum: 5e55b458f60edc32b3af3a2febeab3d73c7009aefc9844873e74b88cd50c8bf9
+Description:  network input/output plugin
+
+Package: collectd-mod-rrdtool
+Version: 5.11.0-9
+Depends: libc, collectd, librrd1
+Source: feeds/packages/utils/collectd
+SourceName: collectd-mod-rrdtool
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Maintainer: Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
+Architecture: mipsel_24kc
+Installed-Size: 12214
+Filename: collectd-mod-rrdtool_5.11.0-9_mipsel_24kc.ipk
+Size: 12962
+SHA256sum: 22b36c979ec8b04216fafda51aa22b963e52e293e64f6b47d6d05bedfa75e56b
+Description:  RRDtool output plugin
+
+Package: collectd
+Version: 5.11.0-9
+Depends: libc, libpthread, zlib, libltdl7, libip4tc2, jshn
+Source: feeds/packages/utils/collectd
+SourceName: collectd
+Section: utils
+CPE-ID: cpe:/a:collectd:collectd
+Maintainer: Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
+Architecture: mipsel_24kc
+Installed-Size: 90441
+Filename: collectd_5.11.0-9_mipsel_24kc.ipk
+Size: 91216
+SHA256sum: fcae0f4901369426a27f5015f92d9aa239ca97fdc914d32170cb6c7cd990235e
+Description:  collectd is a small daemon which collects system information periodically
+ and provides mechanismns to store the values in a variety of ways.
+
+Package: confuse
+Version: 3.2.2-1
+Depends: libc
+Source: feeds/packages/libs/confuse
+SourceName: confuse
+License: ISC
+Section: libs
+CPE-ID: cpe:/a:libconfuse_project:libconfuse
+Architecture: mipsel_24kc
+Installed-Size: 16011
+Filename: confuse_3.2.2-1_mipsel_24kc.ipk
+Size: 17076
+SHA256sum: cad754351df8960f7271d8e96f3cc5be287ce34e17268b05dbd4b1e9190890f8
+Description:  libConfuse is a configuration file parser library, licensed under the
+ terms of the ISC license, and written in C. It supports sections and
+ (lists of) values (strings, integers, floats, booleans or other
+ sections), as well as some other features (such as single/double-quoted
+ strings, environment variable expansion, functions and nested include
+ statements). It makes it very easy to add configuration file capability
+ to a program using a simple API.
+ 
+ The goal of libConfuse is not to be the configuration file parser
+ library with a gazillion of features. Instead, it aims to be easy to use
+ and quick to integrate with your code. libConfuse was called libcfg
+ before, but was changed to not confuse with other similar libraries.
+
+Package: coreutils-base64
+Version: 8.32-1
+Depends: libc, coreutils
+Alternatives: 300:/bin/base64:/usr/bin/gnu-base64
+Source: feeds/packages/utils/coreutils
+SourceName: coreutils-base64
+License: GPL-3.0-or-later
+LicenseFiles: COPYING
+Section: utils
+CPE-ID: cpe:/a:gnu:coreutils
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 17717
+Filename: coreutils-base64_8.32-1_mipsel_24kc.ipk
+Size: 18522
+SHA256sum: a204519302e4ba20bbe87298a5b2a46d570e901de85a2573d4098c66406972f1
+Description:  Full version of standard GNU base64 utility.
+
+Package: coreutils-nohup
+Version: 8.32-1
+Depends: libc, coreutils
+Alternatives: 300:/usr/bin/nohup:/usr/bin/gnu-nohup
+Source: feeds/packages/utils/coreutils
+SourceName: coreutils-nohup
+License: GPL-3.0-or-later
+LicenseFiles: COPYING
+Section: utils
+CPE-ID: cpe:/a:gnu:coreutils
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 16194
+Filename: coreutils-nohup_8.32-1_mipsel_24kc.ipk
+Size: 16955
+SHA256sum: cb1a7bf47ac5f5a65b0cf656d761ce6cfa3b6048c78645e3a83417ad7bfe1b63
+Description:  Full version of standard GNU nohup utility.
+
+Package: coreutils-sort
+Version: 8.32-1
+Depends: libc, coreutils, libpthread
+Alternatives: 300:/usr/bin/sort:/usr/bin/gnu-sort
+Source: feeds/packages/utils/coreutils
+SourceName: coreutils-sort
+License: GPL-3.0-or-later
+LicenseFiles: COPYING
+Section: utils
+CPE-ID: cpe:/a:gnu:coreutils
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 43004
+Filename: coreutils-sort_8.32-1_mipsel_24kc.ipk
+Size: 43845
+SHA256sum: 6a116e14f6d463394dc50a89f0de43a58a6d8ab2867f915903f1981931569f46
+Description:  Full version of standard GNU sort utility.
+
+Package: coreutils
+Version: 8.32-1
+Depends: libc
+Source: feeds/packages/utils/coreutils
+SourceName: coreutils
+License: GPL-3.0-or-later
+LicenseFiles: COPYING
+Section: utils
+CPE-ID: cpe:/a:gnu:coreutils
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 105
+Filename: coreutils_8.32-1_mipsel_24kc.ipk
+Size: 978
+SHA256sum: 011a272f7e2dc1316c8d6529be0dea254878df39b9eddac926785ad5f281e530
+Description:  Full versions of standard GNU utilities. If an equivalent Busybox applet is
+ available, you should consider compiling that instead as Busybox applets are
+ usually smaller, at the expense of reduced functionality.
+
+Package: dbus
+Version: 1.13.12-1
+Depends: libc, libexpat, libdbus
+Source: feeds/packages/utils/dbus
+SourceName: dbus
+License: AFL-2.1
+Section: utils
+CPE-ID: cpe:/a:freedesktop:dbus
+Architecture: mipsel_24kc
+Installed-Size: 103094
+Filename: dbus_1.13.12-1_mipsel_24kc.ipk
+Size: 103658
+SHA256sum: 4dfacd82c2474c23ef392e616af1676b1a5dda5089f3164b8a9dd9f9da9cff57
+Description:  Simple interprocess messaging system (daemon)
+
+Package: ddns-scripts
+Version: 2.7.8-3
+Source: feeds/packages/net/ddns-scripts
+SourceName: ddns-scripts
+License: GPL-2.0
+Section: net
+Architecture: all
+Installed-Size: 14585
+Filename: ddns-scripts_2.7.8-3_all.ipk
+Size: 15650
+SHA256sum: 9dae1648caba8d586d3b35ba73e05220b0e790d1a801d3cbc68b966b3b654ca3
+Description:  Dynamic DNS Client scripts (with IPv6 support) - Info: http://wiki.openwrt.org/doc/howto/ddns.client
+
+Package: dkjson
+Version: 2.5-4
+Depends: libc, lua
+Source: feeds/packages/lang/dkjson
+SourceName: dkjson
+License: MIT
+Section: lang
+Maintainer: Lars Gierth <larsg@systemli.org>
+Architecture: all
+Installed-Size: 6689
+Filename: dkjson_2.5-4_all.ipk
+Size: 7474
+SHA256sum: 85538405cd0c57f0d9fad3cb8582db5ce5a7d2a4a4e32bb5a854b1eb67f9f271
+Description:  Lua JSON parser/serializer with UTF-8 support
+
+Package: dnscrypt-proxy-resolvers
+Version: 2019-08-20-07ac3825-2
+Depends: libc
+Source: feeds/packages/net/dnscrypt-proxy
+SourceName: dnscrypt-proxy-resolvers
+License: ISC
+LicenseFiles: COPYING
+Section: net
+Maintainer: Damiano Renfer <damiano.renfer@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 7513
+Filename: dnscrypt-proxy-resolvers_2019-08-20-07ac3825-2_mipsel_24kc.ipk
+Size: 8306
+SHA256sum: 8d2be19a05622adbbe7dc2b8ecd44f3bcf82edca40b1da9e279bfa2cdef9c501
+Description:  Package with current list of dnscrypt-proxy resolvers.
+
+Package: dnscrypt-proxy
+Version: 2019-08-20-07ac3825-2
+Depends: libc, libsodium, dnscrypt-proxy-resolvers
+Source: feeds/packages/net/dnscrypt-proxy
+SourceName: dnscrypt-proxy
+License: ISC
+LicenseFiles: COPYING
+Section: net
+Maintainer: Damiano Renfer <damiano.renfer@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 57656
+Filename: dnscrypt-proxy_2019-08-20-07ac3825-2_mipsel_24kc.ipk
+Size: 58692
+SHA256sum: 4dba225dbe4d008e34cc96a50714f95632342d707a5801f9c058f3bf20c9bc05
+Description:  dnscrypt-proxy provides local service which can be used directly as your
+ local resolver or as a DNS forwarder, encrypting and authenticating requests
+ using the DNSCrypt protocol and passing them to an upstream server.
+ The DNSCrypt protocol uses high-speed high-security elliptic-curve cryptography
+ and is very similar to DNSCurve, but focuses on securing communications between
+ a client and its first-level resolver.
+
+Package: dump1090
+Version: 3.8.1-3
+Depends: libc, librtlsdr, uhttpd, libncurses6
+Source: feeds/packages/utils/dump1090
+SourceName: dump1090
+License: GPL-2.0-or-later
+LicenseFiles: COPYING LICENSE
+Section: utils
+Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 2214530
+Filename: dump1090_3.8.1-3_mipsel_24kc.ipk
+Size: 2207755
+SHA256sum: 33a608bd51465e5a1cd3a070e5b1cefd473e611d2973d5ec3dc5b4f3de204980
+Description:  Dump1090 is a Mode S decoder specifically designed for RTLSDR devices.
+
+Package: dynapoint
+Version: 3
+Depends: libc, lua, libubus-lua, libuci-lua, libubox-lua, luci-lib-nixio
+Source: feeds/packages/net/dynapoint
+SourceName: dynapoint
+License: GPL-3.0-or-later
+Section: net
+Maintainer: Tobias Ilte <tobias.ilte@campus.tu-berlin.de>
+Architecture: all
+Installed-Size: 2466
+Filename: dynapoint_3_all.ipk
+Size: 3310
+SHA256sum: be77820d105dfe603100e92f92abfb3fc9d3c935c098cf391c750c7cc28ece67
+Description:  Dynapoint uses LUA scripts to allow dynamic access point creation
+ and deletion depending on changes of certain network conditions.
+
+Package: etherwake
+Version: 1.09-5
+Depends: libc
+Source: feeds/packages/net/etherwake
+SourceName: etherwake
+Section: net
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Architecture: mipsel_24kc
+Installed-Size: 5014
+Filename: etherwake_1.09-5_mipsel_24kc.ipk
+Size: 5925
+SHA256sum: dd6aacb7b0bafdb860087ca5729f3940d2abbe7ae5fda967f01e00034201b746
+Description:  You can wake up WOL compliant Computers which have been powered down to
+ sleep mode or start WOL compliant Computers with a BIOS feature.
+ WOL is an abbreviation for Wake-on-LAN. It is a standard that allows you
+ to turn on a computer from another location over a network connection.
+ ether-wake also supports WOL passwords.
+
+Package: fdk-aac
+Version: 2.0.1-3
+Depends: libc
+Source: feeds/packages/sound/fdk-aac
+SourceName: fdk-aac
+License: Fraunhofer-FDK-AAC-for-Android
+LicenseFiles: NOTICE
+Section: sound
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: mipsel_24kc
+Installed-Size: 318690
+Filename: fdk-aac_2.0.1-3_mipsel_24kc.ipk
+Size: 319336
+SHA256sum: 0b3affa2850ecc49752532f21c8cbc15d6848e2822c6f5899949acdbc4c9917b
+Description:  Port of the Fraunhofer FDK AAC Codec Library for Android
+
+Package: forked-daapd
+Version: 27.1-6
+Depends: libc, libgpg-error, libgcrypt, libgdbm, zlib, libexpat, libunistring, libevent2-7, libdaemon, libantlr3c, confuse, libopus, alsa-lib, libffmpeg-full, mxml, libavahi-client, sqlite3-cli, libplist, libcurl4, libjson-c4, libprotobuf-c, libgnutls, libsodium, libwebsockets-full
+Source: feeds/packages/sound/forked-daapd
+SourceName: forked-daapd
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: sound
+Maintainer: Espen Jürgensen <espenjurgensen+openwrt@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 3772496
+Filename: forked-daapd_27.1-6_mipsel_24kc.ipk
+Size: 3771246
+SHA256sum: 23620a87f0d1befed93e0089a4856ab8f37ae2752f0767b5e2f03524ce5ba686
+Description:  forked-daapd is a Linux/FreeBSD DAAP (iTunes), MPD (Music Player Daemon) and
+ RSP (Roku) media server. It has support for AirPlay speakers, Chromecast,
+ Apple Remote (and compatibles), MPD clients, internet radio and LastFM. It
+ does not support AirPlay/Chromecast video.
+
+Package: fuse-utils
+Version: 2.9.9-1
+Depends: libc, libfuse1
+Source: feeds/packages/utils/fuse
+SourceName: fuse-utils
+License: GPL-2.0-only
+LicenseFiles: COPYING
+Section: utils
+CPE-ID: cpe:/a:fuse_project:fuse
+Architecture: mipsel_24kc
+Installed-Size: 12467
+Filename: fuse-utils_2.9.9-1_mipsel_24kc.ipk
+Size: 13263
+SHA256sum: c7e91032c68182eb9339dcc7f5af03fd1163328ab0d9a3276578d4f89211637c
+Description:  FUSE (Filesystem in UserSpacE)
+ This package contains the FUSE utilities.
+ - fusermount
+ - ulockmgr_server
+
+Package: fwknopd
+Version: 2.6.10-3
+Depends: libc, iptables, libfko, libpcap1
+Source: feeds/packages/net/fwknop
+SourceName: fwknopd
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:cipherdyne:fwknop
+Maintainer: Jonathan Bennett <JBennett@incomsystems.biz>
+Architecture: mipsel_24kc
+Installed-Size: 57296
+Filename: fwknopd_2.6.10-3_mipsel_24kc.ipk
+Size: 58483
+SHA256sum: 950db549b4eaf2bc81fcc22e69f8c4be367a08590008c8caefaa83fe4cdb9e86
+Description:  Fwknop implements an authorization scheme known as Single Packet Authorization
+ (SPA) for Linux systems running iptables.  This mechanism requires only a
+ single encrypted and non-replayed packet to communicate various pieces of
+ information including desired access through an iptables policy. The main
+ application of this program is to use iptables in a default-drop stance to
+ protect services such as SSH with an additional layer of security in order to
+ make the exploitation of vulnerabilities (both 0-day and unpatched code) much
+ more difficult.
+ This package contains the fwknop daemon.
+
+Package: haproxy
+Version: 2.1.7-1
+Depends: libc, libpcre, libltdl7, zlib, libpthread, liblua5.3-5.3, libopenssl1.1, libncurses6, libreadline8, libatomic1
+Source: feeds/packages/net/haproxy
+SourceName: haproxy
+License: GPL-2.0-only
+LicenseFiles: LICENSE
+Section: net
+CPE-ID: cpe:/a:haproxy:haproxy
+Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 656549
+Filename: haproxy_2.1.7-1_mipsel_24kc.ipk
+Size: 657137
+SHA256sum: e6d289f4112aca4e28461ca98c31effd1b21922453a913905b0588c83fa57f39
+Description:  Open source Reliable, High Performance TCP/HTTP Load Balancer.
+ This package is built with SSL and LUA support.
+
+Package: hd-idle
+Version: 1.05-2
+Depends: libc
+Source: feeds/packages/utils/hd-idle
+SourceName: hd-idle
+License: GPL-2.0
+Section: utils
+Maintainer: Lim Guo Wei <limguowei@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 4386
+Filename: hd-idle_1.05-2_mipsel_24kc.ipk
+Size: 5176
+SHA256sum: c1a97f5224b02c3f7773761880beba4bcbdaee7b6fa4aa1d254656f986aa1ed8
+Description:  hd-idle is a utility program for spinning-down external disks after a period of idle time.
+
+Package: icu
+Version: 66.1-1
+Depends: libc, libstdcpp6, libpthread
+Source: feeds/packages/libs/icu
+SourceName: icu
+License: ICU
+LicenseFiles: LICENSE
+Section: libs
+CPE-ID: cpe:/a:icu-project:international_components_for_unicode
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 1711982
+Filename: icu_66.1-1_mipsel_24kc.ipk
+Size: 1699705
+SHA256sum: 806f1c6037f19bcd46b8650108292a807e1c968f386c8561466c2cf1ac921908
+Description:  ICU is a mature, widely used set of C/C++ and Java libraries providing Unicode and Globalization support for software applications. ICU is widely portable and gives applications the same results on all platforms and between C/C++ and Java software.
+ This package supports C/C++.
+
+Package: libantlr3c
+Version: 3.4-1
+Depends: libc
+Source: feeds/packages/libs/libantlr3c
+SourceName: libantlr3c
+License: BSD-2-Clause
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Espen Jürgensen <espenjurgensen+openwrt@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 37259
+Filename: libantlr3c_3.4-1_mipsel_24kc.ipk
+Size: 38226
+SHA256sum: 8d204a6de60066572d77c1fa70fc663523b6be735ee3df1d32a6c2ffcedb36d4
+Description:  ANother Tool for Language Recognition, is a language tool that provides a framework for constructing recognizers,
+ interpreters, compilers, and translators from grammatical descriptions containing actions in a variety of target languages.
+
+Package: libao
+Version: 1.2.0-1
+Depends: libc, alsa-lib
+Source: feeds/packages/libs/libao
+SourceName: libao
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: mipsel_24kc
+Installed-Size: 19978
+Filename: libao_1.2.0-1_mipsel_24kc.ipk
+Size: 20784
+SHA256sum: 0ad432559cbeecd33161482f7fa34f66846c93e84aa55b82618cfeb7c1fbd996
+Description:  Libao is a cross-platform audio library that allows programs to
+ output audio using a simple API on a wide variety of platforms.
+
+Package: libavahi-client
+Version: 0.8-6
+Depends: libc, avahi-dbus-daemon
+Source: feeds/packages/libs/avahi
+SourceName: libavahi-client
+License: LGPL-2.1-or-later
+LicenseFiles: LICENSE
+Section: libs
+CPE-ID: cpe:/a:avahi:avahi
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: mipsel_24kc
+Installed-Size: 15888
+Filename: libavahi-client_0.8-6_mipsel_24kc.ipk
+Size: 17000
+SHA256sum: e8cdcbaf9db4d71b8d3912f45c98717ed475a6fd4f6cdd2f84a55a9660edfcc7
+Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
+ implementation (library). It facilitates
+ service discovery on a local network -- this means that
+ you can plug your laptop or computer into a network and
+ instantly be able to view other people who you can chat with,
+ find printers to print to or find files being shared.
+ This kind of technology is already found in MacOS X
+ (branded 'Rendezvous', 'Bonjour' and sometimes 'ZeroConf')
+ and is very convenient.
+ .
+ This packages adds the libavahi-client library.
+ It also automatically adds the required
+ libavahi-dbus-support and the avahi-dbus-daemon packages.
+ For more information please see the avahi documentation.
+
+Package: libavahi-compat-libdnssd
+Version: 0.8-6
+Depends: libc, libavahi-client
+Source: feeds/packages/libs/avahi
+SourceName: libavahi-compat-libdnssd
+License: LGPL-2.1-or-later
+LicenseFiles: LICENSE
+Section: libs
+CPE-ID: cpe:/a:avahi:avahi
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: mipsel_24kc
+Installed-Size: 9296
+Filename: libavahi-compat-libdnssd_0.8-6_mipsel_24kc.ipk
+Size: 10448
+SHA256sum: d2630fcaf78a412da41c2a40b8e2cc3a4f7fad3c6029af3595ba271b51cf7808
+Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
+ implementation (library). It facilitates
+ service discovery on a local network -- this means that
+ you can plug your laptop or computer into a network and
+ instantly be able to view other people who you can chat with,
+ find printers to print to or find files being shared.
+ This kind of technology is already found in MacOS X
+ (branded 'Rendezvous', 'Bonjour' and sometimes 'ZeroConf')
+ and is very convenient.
+ .
+ This packages adds the libavahi-compat-libdnssd library.
+ It also automatically adds the required libavahi-client package.
+ For more information please see the avahi documentation.
+
+Package: libavahi-dbus-support
+Version: 0.8-6
+Depends: libc, dbus
+Provides: libavahi
+Source: feeds/packages/libs/avahi
+SourceName: libavahi-dbus-support
+License: LGPL-2.1-or-later
+LicenseFiles: LICENSE
+Section: libs
+CPE-ID: cpe:/a:avahi:avahi
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: mipsel_24kc
+Installed-Size: 63773
+Filename: libavahi-dbus-support_0.8-6_mipsel_24kc.ipk
+Size: 65167
+SHA256sum: 40b2fa31d22a49e00bf84e059a9a79869e3fc3b18effd656aa4f7cfd75b6184e
+Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
+ implementation (library). It facilitates
+ service discovery on a local network -- this means that
+ you can plug your laptop or computer into a network and
+ instantly be able to view other people who you can chat with,
+ find printers to print to or find files being shared.
+ This kind of technology is already found in MacOS X
+ (branded 'Rendezvous', 'Bonjour' and sometimes 'ZeroConf')
+ and is very convenient.
+ .
+ The libavahi package contains the mDNS/DNS-SD shared libraries,
+ used by other programs. Specifically, it provides
+ libavahi-core and libavahi-common libraries.
+ .
+ The libavahi-dbus-support package enables
+ D-Bus support in avahi, needed to support
+ the libavahi-client library and avahi-utils.
+ .
+ Selecting this package modifies the build configuration
+ so that avahi packages are built with support for D-BUS enabled;
+ it does not generate a separate binary of its own.
+ It also automatically adds the D-Bus package to the build.
+ libavahi-dbus-support is selected automatically if you select
+ libavahi-client or avahi-utils.
+
+Package: libcap
+Version: 2.36-1
+Depends: libc
+Source: feeds/packages/libs/libcap
+SourceName: libcap
+License: GPL-2.0-only
+LicenseFiles: License
+Section: libs
+Maintainer: Paul Wassi <p.wassi@gmx.at>
+Architecture: mipsel_24kc
+Installed-Size: 9699
+Filename: libcap_2.36-1_mipsel_24kc.ipk
+Size: 10447
+SHA256sum: 31fd1d593ef5bcfbbd39a88f55d106913caaef8c8337842c096406da55c99114
+Description:  Linux capabilities library library
+
+Package: libconfig11
+Version: 1.7.2-3
+Depends: libc
+Provides: libconfig
+Source: feeds/packages/libs/libconfig
+SourceName: libconfig
+License: LGPL-2.1-or-later
+LicenseFiles: COPYING.LIB
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mipsel_24kc
+Installed-Size: 14654
+Filename: libconfig11_1.7.2-3_mipsel_24kc.ipk
+Size: 15658
+SHA256sum: 8612eb76738c54b343720561e41f32babe43c4aea946a4f1ba4584b28e693fa9
+Description:  Libconfig is a simple library for manipulating structured configuration
+ files. This file format is more compact and more readable than XML. And
+ unlike XML, it is type-aware, so it is not necessary to do string
+ parsing in application code.
+ 
+ Libconfig is very compact -- just 38K for the stripped C shared
+ library (less than one-fourth the size of the expat XML parser library)
+ and 66K for the stripped C++ shared library. This makes it well-suited
+ for memory-constrained systems like handheld devices.
+
+Package: libdaemon
+Version: 0.14-5
+Depends: libc
+Source: feeds/packages/libs/libdaemon
+SourceName: libdaemon
+Section: libs
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: mipsel_24kc
+Installed-Size: 7584
+Filename: libdaemon_0.14-5_mipsel_24kc.ipk
+Size: 8669
+SHA256sum: 2496e570c1d40b4f14866c9d18328899e2b79d3bed193dbd61d85f0d6884f21d
+Description:  libdaemon is a lightweight C library that eases the writing of UNIX daemons.
+ It consists of the following parts:
+ - A wrapper around fork() which does the correct daemonization procedure of a process
+ - A wrapper around syslog() for simpler and compatible log output to Syslog or STDERR
+ - An API for writing PID files
+ - An API for serializing UNIX signals into a pipe for usage with select() or poll()
+ - An API for running subprocesses with STDOUT and STDERR redirected to syslog
+ 
+ APIs like these are used in most daemon software available. It is not that
+ simple to get it done right and code duplication is not a goal.
+
+Package: libdb47
+Version: 4.7.25.4.NC-5
+Depends: libc, libxml2
+Provides: libdb47-full
+Source: feeds/packages/libs/db47
+SourceName: libdb47
+License: Sleepycat
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Marcel Denia <naoir@gmx.net>
+Architecture: mipsel_24kc
+Installed-Size: 463630
+Filename: libdb47_4.7.25.4.NC-5_mipsel_24kc.ipk
+Size: 464270
+SHA256sum: aa52ba411553d728f853192009b03fc6929e9f46e314e25bf478fefc13c663dd
+Description:  Berkeley DB library (4.7).
+
+Package: libdbus
+Version: 1.13.12-1
+Depends: libc, libpthread
+Source: feeds/packages/utils/dbus
+SourceName: libdbus
+License: AFL-2.1
+Section: utils
+CPE-ID: cpe:/a:freedesktop:dbus
+Architecture: mipsel_24kc
+Installed-Size: 103223
+Filename: libdbus_1.13.12-1_mipsel_24kc.ipk
+Size: 104104
+SHA256sum: 6b3b93a2b897e45f8b8616bb1a9aa9871f4789285cb783250defecd01c6a2582
+Description:  Simple interprocess messaging system (library)
+
+Package: libdevmapper
+Version: 2.03.09-1
+Depends: libc, kmod-dm, libpthread, libuuid1, librt, libblkid1
+Source: feeds/packages/utils/lvm2
+SourceName: libdevmapper
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING COPYING.lib
+Section: libs
+CPE-ID: cpe:/a:heinz_mauelshagen:lvm2
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Architecture: mipsel_24kc
+Installed-Size: 136023
+Filename: libdevmapper_2.03.09-1_mipsel_24kc.ipk
+Size: 136972
+SHA256sum: 5a4d5e15e86809dcf5c64c193057dc80af10f74ddedca88d5498cdcb7ba3472b
+Description:  The device-mapper is a component of the 2.6 linux kernel that supports logical
+ volume management. It is required by LVM2 and EVMS.
+
+Package: libedit
+Version: 20191231-3.1-1
+Depends: libc, libncurses6
+Source: feeds/packages/libs/libedit
+SourceName: libedit
+License: BSD-3-Clause
+Section: libs
+Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
+Architecture: mipsel_24kc
+Installed-Size: 62209
+Filename: libedit_20191231-3.1-1_mipsel_24kc.ipk
+Size: 62983
+SHA256sum: 146e6d520320a0146ec56138dc2efedbe4a6209da9b8b1387f6f7b55c306e877
+Description:  Generic line editing, history, and tokenization functions similar to GNU Readline.
+
+Package: libev
+Version: 4.31-1
+Depends: libc
+Source: feeds/packages/libs/libev
+SourceName: libev
+License: BSD-2-Clause
+Section: libs
+Maintainer: Karl Palsson <karlp@tweak.net.au>
+Architecture: mipsel_24kc
+Installed-Size: 25157
+Filename: libev_4.31-1_mipsel_24kc.ipk
+Size: 25857
+SHA256sum: 0ce385d823ac0c29054c645b7f54855f1e2f2c4f356f6e2a525dcfdd58284e56
+Description:  A full-featured and high-performance event loop that is loosely modelled after
+ libevent, but without its limitations and bugs.
+
+Package: libexif
+Version: 0.6.21-1
+Depends: libc
+Source: feeds/packages/libs/libexif
+SourceName: libexif
+License: LGPL-2.1
+LicenseFiles: COPYING
+Section: libs
+CPE-ID: cpe:/a:libexif:libexif
+Maintainer: W. Michael Petullo <mike@flyn.org>
+Architecture: mipsel_24kc
+Installed-Size: 60389
+Filename: libexif_0.6.21-1_mipsel_24kc.ipk
+Size: 60622
+SHA256sum: ac2c1446a3811eb68fecfacaf90e138747a3cd4c462204683c1f455c686324ad
+Description:  libexif is a library for parsing, editing, and saving EXIF data. It is
+ intended to replace lots of redundant implementations in command-line
+ utilities and programs with GUIs.
+
+Package: libexpat
+Version: 2.2.9-1
+Depends: libc
+Source: feeds/packages/libs/expat
+SourceName: libexpat
+License: MIT
+LicenseFiles: COPYING
+Section: libs
+CPE-ID: cpe:/a:libexpat:expat
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: mipsel_24kc
+Installed-Size: 47189
+Filename: libexpat_2.2.9-1_mipsel_24kc.ipk
+Size: 47987
+SHA256sum: 9d84d80170de3f2b310670b2e1dd8d6a8c7a00ca59f66b0300b11f8ee3402b40
+Description:  A fast, non-validating, stream-oriented XML parsing library.
+
+Package: libffi
+Version: 3.3-2
+Depends: libc
+Source: feeds/packages/libs/libffi
+SourceName: libffi
+License: MIT
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Architecture: mipsel_24kc
+Installed-Size: 13517
+Filename: libffi_3.3-2_mipsel_24kc.ipk
+Size: 14510
+SHA256sum: edd869a6eb1efc2a71d338afeba10f7e216e6608da5fda0426e3c1af6a09bb16
+Description:  The libffi library provides a portable, high level programming interface to
+ various calling conventions. This allows a programmer to call any function
+ specified by a call interface description at run-time.
+ 
+ FFI stands for Foreign Function Interface. A foreign function interface is the
+ popular name for the interface that allows code written in one language to call
+ code written in another language. The libffi library really only provides the
+ lowest, machine dependent layer of a fully featured foreign function interface.
+ A layer must exist above libffi that handles type conversions for values passed
+ between the two languages.
+
+Package: libffmpeg-full
+Version: 4.3-1
+Depends: libc, libpthread, libpthread, zlib, libbz2-1.0, alsa-lib, libgnutls, libopus, shine, fdk-aac
+Provides: libffmpeg
+Source: feeds/packages/multimedia/ffmpeg
+SourceName: libffmpeg-full
+License: LGPL-2.1-or-later GPL-2.0-or-later LGPL-3.0-or-later
+LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
+Section: libs
+CPE-ID: cpe:/a:ffmpeg:ffmpeg
+Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 6042865
+Filename: libffmpeg-full_4.3-1_mipsel_24kc.ipk
+Size: 6019536
+SHA256sum: 84d169382c1a3a10d0f35e10845df6e6340b87262244ba2ee3e2560bed84b1d3
+Description:  FFmpeg is a a software package that can record, convert and stream digital
+ audio and video in numerous formats.
+ 
+ FFmpeg licensing / patent issues are complex. It is the reponsibility of the
+ user to understand any requirements in this regard with its usage. See:
+ https://ffmpeg.org/legal.html for further information.
+ .
+ This package contains full-featured FFmpeg shared libraries.
+
+Package: libfko
+Version: 2.6.10-3
+Depends: libc
+Source: feeds/packages/net/fwknop
+SourceName: libfko
+License: GPL-2.0-or-later
+Section: libs
+CPE-ID: cpe:/a:cipherdyne:fwknop
+Maintainer: Jonathan Bennett <JBennett@incomsystems.biz>
+Architecture: mipsel_24kc
+Installed-Size: 32205
+Filename: libfko_2.6.10-3_mipsel_24kc.ipk
+Size: 33362
+SHA256sum: 7ee15079c2e3a3619cf7c2eb9a54535542d41297abae000cffe735e2c3351752
+Description:  Fwknop implements an authorization scheme known as Single Packet Authorization
+ (SPA) for Linux systems running iptables.  This mechanism requires only a
+ single encrypted and non-replayed packet to communicate various pieces of
+ information including desired access through an iptables policy. The main
+ application of this program is to use iptables in a default-drop stance to
+ protect services such as SSH with an additional layer of security in order to
+ make the exploitation of vulnerabilities (both 0-day and unpatched code) much
+ more difficult.
+ This package contains the libfko shared library.
+
+Package: libflac
+Version: 1.3.3-1
+Depends: libc
+Source: feeds/packages/libs/flac
+SourceName: libflac
+License: GFDL-1.2 GPL-2 LGPL-2.1 BSD-3-Clause
+LicenseFiles: README COPYING.FDL COPYING.GPL COPYING.LGPL COPYING.Xiph
+Section: libs
+CPE-ID: cpe:/a:flac_project:flac
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: mipsel_24kc
+Installed-Size: 72106
+Filename: libflac_1.3.3-1_mipsel_24kc.ipk
+Size: 73025
+SHA256sum: 9beeccc9bf3cea96bb05ef552471935f19a66498f2b46bb558807a9b6f45bb06
+Description:  Free Lossless Audio Codec library
+
+Package: libfreetype
+Version: 2.10.2-1
+Depends: libc, zlib, libpng
+Source: feeds/packages/libs/freetype
+SourceName: libfreetype
+License: FTL GPL-2.0-only MIT ZLIB GPL-3.0-or-later
+LicenseFiles: docs/LICENSE.TXT docs/FTL.TXT docs/GPLv2.TXT src/bdf/README src/pcf/README src/gzip/zlib.h builds/unix/config.sub builds/unix/config.guess builds/unix/libtool 
+Section: libs
+CPE-ID: cpe:/a:freetype:freetype2
+Maintainer: Val Kulkov <val.kulkov@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 267594
+Filename: libfreetype_2.10.2-1_mipsel_24kc.ipk
+Size: 268386
+SHA256sum: 505c4108f1fa5b63f9ac0cd141f41912dbb0d9e37d35a89cc083b283794b8fd6
+Description:  The FreeType project is a team of volunteers who develop free,
+ portable and high-quality software solutions for digital typography.
+ They specifically target embedded systems and focus on bringing small,
+ efficient and ubiquitous products.
+
+Package: libfuse1
+Version: 2.9.9-1
+Depends: libc, kmod-fuse, libpthread
+Provides: libfuse
+Source: feeds/packages/utils/fuse
+SourceName: libfuse
+License: LGPL-2.1-only
+LicenseFiles: COPYING.LIB
+Section: libs
+CPE-ID: cpe:/a:fuse_project:fuse
+Architecture: mipsel_24kc
+Installed-Size: 57326
+Filename: libfuse1_2.9.9-1_mipsel_24kc.ipk
+Size: 58002
+SHA256sum: 580ece4e9a87dcd27645a517890042a0b9003f6957e80660b5b8b42dbce8d511
+Description:  FUSE (Filesystem in UserSpacE)
+ This package contains the FUSE shared libraries, needed by other programs.
+ - libfuse
+ - libulockmgr
+
+Package: libgcrypt
+Version: 1.8.5-1
+Depends: libc, libgpg-error
+Source: feeds/packages/libs/libgcrypt
+SourceName: libgcrypt
+License: LGPL-2.1-or-later
+LicenseFiles: COPYING.LIB
+Section: libs
+CPE-ID: cpe:/a:gnupg:libgcrypt
+Maintainer: W. Michael Petullo <mike@flyn.org>
+Architecture: mipsel_24kc
+Installed-Size: 362143
+Filename: libgcrypt_1.8.5-1_mipsel_24kc.ipk
+Size: 362151
+SHA256sum: 400a3b012831a92cfb5718699f743a0851a0f460e4bb3064bd37dbd97bbee37f
+Description:  This is a general purpose cryptographic library based on the code from
+ GnuPG. It provides functions for all cryptograhic building blocks:
+ symmetric ciphers (AES, DES, Arcfour, CAST5), hash algorithms (MD5, SHA-1,
+ RIPE-MD160, SHA-224/256, SHA-384/512), MACs (HMAC for all hash
+ algorithms), public key algorithms (RSA, DSA), large integer functions,
+ random numbers and a lot of supporting functions. Some algorithms have
+ been disabled to reduce size (Blowfish, Twofish, Serpent,
+ RC2, SEED, Camellia, CRC, MD4, TIGER-192, Whirlpool, ElGamal, ECC).
+
+Package: libgd-full
+Version: 2.3.0-3
+Depends: libc, libjpeg, libpng, libwebp, libtiff5, libfreetype
+Source: feeds/packages/libs/libgd
+SourceName: libgd-full
+License: MIT
+LicenseFiles: COPYING
+Section: libs
+CPE-ID: cpe:/a:libgd:libgd
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 99862
+Filename: libgd-full_2.3.0-3_mipsel_24kc.ipk
+Size: 99258
+SHA256sum: 192faef4be22b9faaf0bb324d0524cbb88ce433624278f2b2707d406d19dbb51
+Description:  GD is an open source code library for the dynamic creation of images by
+ programmers. GD creates PNG, JPEG and GIF images, among other formats.
+ .
+ This variant of the libgd package is compiled will all features enabled.
+
+Package: libgd
+Version: 2.3.0-3
+Depends: libc, libjpeg, libpng, libwebp
+Source: feeds/packages/libs/libgd
+SourceName: libgd
+License: MIT
+LicenseFiles: COPYING
+Section: libs
+CPE-ID: cpe:/a:libgd:libgd
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 86645
+Filename: libgd_2.3.0-3_mipsel_24kc.ipk
+Size: 86045
+SHA256sum: 37491bbd3dce2626361bd70e85be06e9b9b5909a1ebbbae235a126dc77c47982
+Description:  GD is an open source code library for the dynamic creation of images by
+ programmers. GD creates PNG, JPEG and GIF images, among other formats.
+
+Package: libgdbm
+Version: 1.18.1-2
+Depends: libc
+Source: feeds/packages/libs/gdbm
+SourceName: libgdbm
+License: GPL-3.0-or-later
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Marcel Denia <naoir@gmx.net>
+Architecture: mipsel_24kc
+Installed-Size: 19490
+Filename: libgdbm_1.18.1-2_mipsel_24kc.ipk
+Size: 20288
+SHA256sum: fa0eb9692aa7cca79fa5cc4449acc6220ffdd3d4ad7850eaa3fa8e92700f64dd
+Description:  GNU database manager library
+ GNU dbm is a set of database routines that use extendible hashing and
+ works similar to the standard UNIX dbm routines.
+
+Package: libgnutls
+Version: 3.6.14-1
+Depends: libc, libnettle7, libgmp10, libatomic1
+Source: feeds/packages/libs/gnutls
+SourceName: libgnutls
+License: LGPL-2.1-or-later
+Section: libs
+CPE-ID: cpe:/a:gnu:gnutls
+Maintainer: Nikos Mavrogiannopoulos <nmav@gnutls.org>
+Architecture: mipsel_24kc
+Installed-Size: 673266
+Filename: libgnutls_3.6.14-1_mipsel_24kc.ipk
+Size: 672331
+SHA256sum: 5e8997567dcc8a449757cb0a72bb26a6e2a4855564f67131dac3ca6395e7a144
+Description:  GnuTLS is a secure communications library implementing the SSL, TLS
+ and DTLS protocols and technologies around them. It provides a simple
+ C language application programming interface (API) to access the secure
+ communications protocols as well as APIs to parse and write X.509, PKCS12,
+ OpenPGP and other required structures. It is aimed to be portable and
+ efficient with focus on security and interoperability.
+ This package contains the GnuTLS shared library, needed by other programs.
+
+Package: libgpg-error
+Version: 1.37-1
+Depends: libc
+Source: feeds/packages/libs/libgpg-error
+SourceName: libgpg-error
+License: LGPL-2.1-or-later
+LicenseFiles: COPYING
+Section: libs
+Maintainer: W. Michael Petullo <mike@flyn.org>
+Architecture: mipsel_24kc
+Installed-Size: 42909
+Filename: libgpg-error_1.37-1_mipsel_24kc.ipk
+Size: 43855
+SHA256sum: ae8c4a4241789d383b1f65a990967a5d0520782378a4fafb6003a2fa4647fc3a
+Description:  An helper library for common error codes and descriptions.
+ This is a library that defines common error values for all GnuPG
+ components. Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
+ Libksba, DirMngr, Pinentry, SmartCard Daemon and possibly more in the
+ future.
+
+Package: libhttp-parser
+Version: 2.9.4-1
+Depends: libc
+Source: feeds/packages/libs/libhttp-parser
+SourceName: libhttp-parser
+License: MIT
+LicenseFiles: LICENSE-MIT
+Section: libs
+Maintainer: Ramanathan Sivagurunathan <ramzthecoder@gmail.com>, Hirokazu MORIKAWA <morikw2@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 14350
+Filename: libhttp-parser_2.9.4-1_mipsel_24kc.ipk
+Size: 15319
+SHA256sum: d4a04b10718c6169c48f8a30ddbbf0c2aad9db96bade64d324a77eaae9711162
+Description:  A parser for HTTP messages written in C. It parses both requests and responses.
+ The parser is designed to be used in performance HTTP applications.
+ It does not make any syscalls nor allocations, it does not buffer data,
+ it can be interrupted at anytime. Depending on your architecture,
+ it only requires about 40 bytes of data per message stream
+ (in a web server that is per connection).
+
+Package: libid3tag
+Version: 0.15.1b-4
+Depends: libc, zlib
+Source: feeds/packages/libs/libid3tag
+SourceName: libid3tag
+License: GPL-2
+LicenseFiles: COPYING
+Section: libs
+CPE-ID: cpe:/a:media-libs:libid3tag
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: mipsel_24kc
+Installed-Size: 22898
+Filename: libid3tag_0.15.1b-4_mipsel_24kc.ipk
+Size: 23651
+SHA256sum: e5f6c1e7415f7d4d6061e30cae91d9f4bc29c3f337a04681fb1c54b696e03523
+Description:  libid3tag is a library for reading and (eventually) writing ID3 tags, both
+ ID3v1 and the various versions of ID3v2.
+
+Package: libjpeg-turbo
+Version: 2.0.5-1
+Depends: libc
+Provides: libjpeg
+Source: feeds/packages/libs/libjpeg-turbo
+SourceName: libjpeg-turbo
+License: BSD-3-Clause IJG zlib
+LicenseFiles: LICENSE.md
+Section: libs
+Maintainer: Rosen Penev <rosenp@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 88849
+Filename: libjpeg-turbo_2.0.5-1_mipsel_24kc.ipk
+Size: 89044
+SHA256sum: 91f1eafcbba873e760f72d39a3050f192995f20049e4e88bf2a63d27fd613526
+Description:  libjpeg-turbo is a speed focused fork of libjpeg.
+
+Package: libkeyutils1
+Version: 1.6.1-1
+Depends: libc
+Provides: libkeyutils
+Source: feeds/packages/libs/keyutils
+SourceName: libkeyutils
+License: LGPL-2.1-or-later
+LicenseFiles: LICENSE.LGPL
+Section: libs
+Architecture: mipsel_24kc
+Installed-Size: 4471
+Filename: libkeyutils1_1.6.1-1_mipsel_24kc.ipk
+Size: 5184
+SHA256sum: b382ff0f5e89e9b6d6f6a6cb0f92f729ef6cbd9b48070611e6e3da94e2ccb9dc
+Description:  Key utilities library
+
+Package: liblxc
+Version: 4.0.2-3
+Depends: libc, lxc, libcap, libpthread, libseccomp, libopenssl1.1
+Source: feeds/packages/utils/lxc
+SourceName: liblxc
+License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
+Section: libs
+Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
+Architecture: mipsel_24kc
+Installed-Size: 351161
+Filename: liblxc_4.0.2-3_mipsel_24kc.ipk
+Size: 350808
+SHA256sum: b937dd8c15ae3b69e3dc3a1efad72247acfef3eb4f3133d8f72ff6cae85205ad
+Description:  LXC userspace library
+
+Package: liblzma
+Version: 5.2.5-1
+Depends: libc, libpthread
+Source: feeds/packages/utils/xz
+SourceName: liblzma
+License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
+LicenseFiles: COPYING
+Section: libs
+CPE-ID: cpe:/a:tukaani:xz
+Architecture: mipsel_24kc
+Installed-Size: 48453
+Filename: liblzma_5.2.5-1_mipsel_24kc.ipk
+Size: 49332
+SHA256sum: ef73fccf7fc6dc26b51e4cda97c0565b59f9b2f90e4b3cfe0533c33e86b7559e
+Description:  liblzma library from XZ Utils
+
+Package: libmilter-sendmail
+Version: 8.15.2-3
+Depends: libc, libpthread
+Source: feeds/packages/mail/sendmail
+SourceName: libmilter-sendmail
+License: Sendmail
+LicenseFiles: LICENSE
+Section: libs
+CPE-ID: cpe:/a:sendmail:sendmail
+Maintainer: Val Kulkov <val.kulkov@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 17586
+Filename: libmilter-sendmail_8.15.2-3_mipsel_24kc.ipk
+Size: 18444
+SHA256sum: 3dfcd3d6247e5f0caf0d45c52539cd6ebff7a85ec0847e07eb40ba6749dbcdd9
+Description:  The sendmail Mail Filter API (Milter) is designed to allow third-party
+ programs access to mail messages as they are being processed in order to
+ filter meta-information and content.
+
+Package: libminiupnpc
+Version: 2.1.20191224-1
+Depends: libc
+Source: feeds/packages/net/miniupnpc
+SourceName: libminiupnpc
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: libs
+CPE-ID: cpe:/a:miniupnp_project:miniupnp
+Architecture: mipsel_24kc
+Installed-Size: 18215
+Filename: libminiupnpc_2.1.20191224-1_mipsel_24kc.ipk
+Size: 19004
+SHA256sum: 21289a2661d62b24b12a75380643b3f02cc6b43875871d7d75a1cb0f49328fff
+Description:  Lightweight UPnP library
+
+Package: libnatpmp1
+Version: 20150609-3
+Depends: libc
+Provides: libnatpmp
+Source: feeds/packages/libs/libnatpmp
+SourceName: libnatpmp
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: libs
+Architecture: mipsel_24kc
+Installed-Size: 3168
+Filename: libnatpmp1_20150609-3_mipsel_24kc.ipk
+Size: 4055
+SHA256sum: 0f969077eab0fd48e31e6733f1720d8af7651604805df5038c5ba20d823ac600
+Description:  libnatpmp is an attempt to make a portable and fully compliant implementation
+ of the protocol for the client side. It is based on non blocking sockets and
+ all calls of the API are asynchronous. It is therefore very easy to integrate
+ the NAT-PMP code to any event driven code.
+ This package contains the shared library.
+
+Package: libogg0
+Version: 1.3.4-1
+Depends: libc
+Provides: libogg
+Source: feeds/packages/libs/libogg
+SourceName: libogg
+License: BSD-3-Clause
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: mipsel_24kc
+Installed-Size: 15611
+Filename: libogg0_1.3.4-1_mipsel_24kc.ipk
+Size: 16478
+SHA256sum: b32afc1aa8e33dd01ca0fca2ae71f8434e5ba3658abcea4afe4729d6cc61c64d
+Description:  Ogg project codecs use the Ogg bitstream format to arrange the raw,
+ compressed bitstream into a more robust, useful form.  For example,
+ the Ogg bitstream makes seeking, time stamping and error recovery
+ possible, as well as mixing several sepearate, concurrent media
+ streams into a single physical bitstream.
+
+Package: libopus
+Version: 1.3.1-3
+Depends: libc
+Source: feeds/packages/libs/opus
+SourceName: libopus
+License: BSD-3-Clause
+LicenseFiles: COPYING
+Section: libs
+CPE-ID: cpe:/a:opus-codec:opus
+Maintainer: Ted Hess <thess@kitchensync.net>, Ian Leonard <antonlacon@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 170568
+Filename: libopus_1.3.1-3_mipsel_24kc.ipk
+Size: 171623
+SHA256sum: cb5784088bfcb7889bbc7818334890c2e61181500a44c330841e858aaea2b602
+Description:  Opus is a totally open, royalty-free, highly versatile audio codec. Opus is
+ unmatched for interactive speech and music transmission over the Internet, but
+ is also intended for storage and streaming applications.
+
+Package: libpagekite
+Version: 0.91.200311C-1
+Depends: libc, libopenssl1.1, libpthread, libev
+Source: feeds/packages/net/pagekitec
+SourceName: libpagekite
+License: Apache-2.0
+Section: libs
+Maintainer: Karl Palsson <karlp@tweak.net.au>
+Architecture: mipsel_24kc
+Installed-Size: 44159
+Filename: libpagekite_0.91.200311C-1_mipsel_24kc.ipk
+Size: 45257
+SHA256sum: 5fb5ccdfd70e65b70ef1845a3a2e823ffd9e83594976592cd9ec21ed0328a32e
+Description:  PageKite is a system for running publicly visible servers (generally
+ web servers) on machines without a direct connection to the Internet,
+ such as mobile devices or computers behind restrictive firewalls.
+ PageKite works around NAT, firewalls and IP-address limitations by
+ using a combination of tunnels and reverse proxies.
+ 
+ This package provides an implementation of the PageKite Protocol in C,
+ optimized for high-performance or embedded applications.
+ 
+ 
+ This package contains the core library
+
+Package: libpcre2-16
+Version: 10.35-1
+Depends: libc
+Source: feeds/packages/libs/pcre2
+SourceName: libpcre2-16
+License: BSD-3-Clause
+LicenseFiles: LICENCE
+Section: libs
+CPE-ID: cpe:/a:pcre:pcre
+Maintainer: Shane Peelar <lookatyouhacker@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 91891
+Filename: libpcre2-16_10.35-1_mipsel_24kc.ipk
+Size: 92747
+SHA256sum: c40a3abdbdf570f9a8f6d57072d30ceae25e0e9ea476cfe6fc706a7261ff7a5c
+Description:  A Perl Compatible Regular Expression library (16bit support)
+
+Package: libpcre2
+Version: 10.35-1
+Depends: libc
+Source: feeds/packages/libs/pcre2
+SourceName: libpcre2
+License: BSD-3-Clause
+LicenseFiles: LICENCE
+Section: libs
+CPE-ID: cpe:/a:pcre:pcre
+Maintainer: Shane Peelar <lookatyouhacker@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 106789
+Filename: libpcre2_10.35-1_mipsel_24kc.ipk
+Size: 107621
+SHA256sum: 5fc3bcba2589bde91510243f2117e38cabc3191b5025fec70255cd39bb98d629
+Description:  A Perl Compatible Regular Expression library
+
+Package: libpcre
+Version: 8.44-1
+Depends: libc
+Source: feeds/packages/libs/pcre
+SourceName: libpcre
+License: BSD-3-Clause
+LicenseFiles: LICENCE
+Section: libs
+CPE-ID: cpe:/a:pcre:pcre
+Maintainer: Thomas Heil <heil@terminal-consulting.de>
+Architecture: mipsel_24kc
+Installed-Size: 80399
+Filename: libpcre_8.44-1_mipsel_24kc.ipk
+Size: 81265
+SHA256sum: 46095989b26e9d095a0c942e00c163fc9e318f874cda2704e21fca079019c632
+Description:  A Perl Compatible Regular Expression library
+
+Package: libplist
+Version: 2.2.0-2
+Depends: libc, libxml2
+Source: feeds/packages/libs/libplist
+SourceName: libplist
+Section: libs
+CPE-ID: cpe:/a:libimobiledevice:libplist
+Maintainer: Rosen Penev <rosenp@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 22932
+Filename: libplist_2.2.0-2_mipsel_24kc.ipk
+Size: 23697
+SHA256sum: d2bc5d8d432f0a332860a650e26efc54eae4290f42e964bad9194b92430a5620
+Description:  A library to handle Apple Property List format whereas it's binary or XML
+
+Package: libpng
+Version: 1.6.37-7
+Depends: libc, zlib
+Source: feeds/packages/libs/libpng
+SourceName: libpng
+License: Libpng GPL-2.0-or-later BSD-3-Clause
+Section: libs
+CPE-ID: cpe:/a:libpng:libpng
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 82702
+Filename: libpng_1.6.37-7_mipsel_24kc.ipk
+Size: 83567
+SHA256sum: 6fdddaded6343a919652ae2b9695c047cc77940eb08d96b7bfe28a9e29db0990
+Description:  A PNG format files handling library
+
+Package: libprotobuf-c
+Version: 1.3.3-2
+Depends: libc
+Source: feeds/packages/libs/protobuf-c
+SourceName: libprotobuf-c
+License: BSD-2-Clause
+LicenseFiles: LICENSE
+Section: libs
+Architecture: mipsel_24kc
+Installed-Size: 9188
+Filename: libprotobuf-c_1.3.3-2_mipsel_24kc.ipk
+Size: 10054
+SHA256sum: 532c3c8e405799889d7c8a0b4f65ca1df8115a36420b15600338e767e046eaf5
+Description:  Runtime library to use Google Protocol Buffers from C applications.
+ Protocol Buffers are a way of encoding structured data in an efficient yet
+ extensible format. Google uses Protocol Buffers for almost all of its
+ internal RPC protocols and file formats.
+
+Package: libqrencode
+Version: 4.0.2-2
+Depends: libc
+Source: feeds/packages/libs/qrencode
+SourceName: libqrencode
+License: LGPL-2.1-or-later
+Section: libs
+Maintainer: Jonathan Bennett <JBennett@incomsystems.biz>
+Architecture: mipsel_24kc
+Installed-Size: 14954
+Filename: libqrencode_4.0.2-2_mipsel_24kc.ipk
+Size: 15810
+SHA256sum: 69b99476c9c59b52c0644c53d871b818bc71ad323c2bfcf68de87d16a7eadffe
+Description:  Libqrencode is a C library for encoding data in a QR Code symbol,
+ a kind of 2D symbology that can be scanned by handy terminals such
+ as a mobile phone with CCD. The capacity of QR Code is up to 7000
+ digits or 4000 characters, and is highly robust.
+
+Package: librrd1
+Version: 1.0.50-3
+Depends: libc, zlib
+Source: feeds/packages/utils/rrdtool1
+SourceName: librrd1
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 129271
+Filename: librrd1_1.0.50-3_mipsel_24kc.ipk
+Size: 130257
+SHA256sum: 5306db01a6269a169e29e6e182c3079fea5f4778013833d77c418c77540cef09
+Description:  RRD is the Acronym for Round Robin Database. RRD is a system to store and
+ display time-series data (i.e. network bandwidth, machine-room temperature,
+ server load average). It stores the data in a very compact way that will
+ not expand over time, and it presents useful graphs by processing the data
+ to enforce a certain data density. It can be used either via simple wrapper
+ scripts (from shell or Perl) or via frontends that poll network devices and
+ put friendly user interface on it.
+ 
+ This is version 1.0.x with cgilib-0.4, gd1.3 and libpng-1.0.9 linked into
+ librrd.so. The library is much smaller compared to the 1.2.x version with
+ separate dynamic linked libraries.
+ This package contains a shared library, used by other programs.
+
+Package: librtlsdr
+Version: 0.6.0-2
+Depends: libc, libusb-1.0-0
+Source: feeds/packages/utils/rtl-sdr
+SourceName: librtlsdr
+License: GPLv2
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: mipsel_24kc
+Installed-Size: 19520
+Filename: librtlsdr_0.6.0-2_mipsel_24kc.ipk
+Size: 20325
+SHA256sum: 00e14790b5bf6cf1f04be1a492545a185130197eaab13e7377f012e7b62595ee
+Description:  rtl-sdr allows DVB-T dongles based on the Realtek RTL2832U to be used as
+ an inexpensive SDR.
+ 
+ This package contains the librtlsdr shared library.
+
+Package: libseccomp
+Version: 2.4.2-2
+Depends: libc
+Source: feeds/packages/libs/libseccomp
+SourceName: libseccomp
+Section: libs
+CPE-ID: cpe:/a:libseccomp_project:libseccomp
+Maintainer: Nikos Mavrogiannopoulos <nmav@gnutls.org>
+Architecture: mipsel_24kc
+Installed-Size: 46719
+Filename: libseccomp_2.4.2-2_mipsel_24kc.ipk
+Size: 39268
+SHA256sum: c6dd36f0ad676e63b1c524011b0343b59b7f2f18c91ac6cc11768041ef736388
+Description:  This package contains the seccomp library.
+
+Package: libsodium
+Version: 1.0.18-1
+Depends: libc
+Source: feeds/packages/libs/libsodium
+SourceName: libsodium
+License: ISC
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Damiano Renfer <damiano.renfer@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 141666
+Filename: libsodium_1.0.18-1_mipsel_24kc.ipk
+Size: 142758
+SHA256sum: 5e69be985a5448743c30ef58c879ae8b4a51cae24d00132f0e8e8508cbaf2fcc
+Description:  NaCl (pronounced "salt") is a new easy-to-use high-speed software library for network communication, encryption, decryption, signatures, etc.
+ NaCl's goal is to provide all of the core operations needed to build higher-level cryptographic tools.
+ Sodium is a portable, cross-compilable, installable, packageable fork of NaCl (based on the latest released upstream version nacl-20110221), with a compatible API.
+ The design choices, particularly in regard to the Curve25519 Diffie-Hellman function, emphasize security (whereas NIST curves emphasize "performance" at the cost of security), and "magic constants" in NaCl/Sodium have clear rationales.
+ The same cannot be said of NIST curves, where the specific origins of certain constants are not described by the standards.
+ And despite the emphasis on higher security, primitives are faster across-the-board than most implementations of the NIST standards.
+
+Package: libsoxr
+Version: 0.1.3-2
+Depends: libc, libpthread
+Source: feeds/packages/libs/libsoxr
+SourceName: libsoxr
+License: LGPL-2.1
+LicenseFiles: LICENCE
+Section: libs
+CPE-ID: cpe:/a:sox:sox
+Maintainer: Ted Hess <thess@kitschensync.net>, Mike Brady <mikebrady@eircom.net>
+Architecture: mipsel_24kc
+Installed-Size: 71740
+Filename: libsoxr_0.1.3-2_mipsel_24kc.ipk
+Size: 72296
+SHA256sum: cac20b6c2080f0336808fde299f82f130db0e62fb5781b065c643d79888eaa49
+Description:  The SoX Resampler library
+ High quality, one-dimensional sample-rate conversion library
+
+Package: libsqlite3-0
+Version: 3320100-1
+Depends: libc, libpthread, zlib
+Provides: libsqlite3
+Source: feeds/packages/libs/sqlite3
+SourceName: libsqlite3
+License: PUBLICDOMAIN
+Section: libs
+CPE-ID: cpe:/a:sqlite:sqlite
+Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
+Architecture: mipsel_24kc
+Installed-Size: 465164
+Filename: libsqlite3-0_3320100-1_mipsel_24kc.ipk
+Size: 465656
+SHA256sum: f73c6e5f5bdeabd663b258bb14340bf50f13b3863e32472b93048babc654359d
+Description:  SQLite is a small C library that implements a self-contained, embeddable,
+ zero-configuration SQL database engine.
+ This package contains the SQLite (v3.x) shared library, used by other
+ programs.
+
+Package: libtiff5
+Version: 4.1.0-2
+Depends: libc, zlib, libjpeg
+Provides: libtiff
+Source: feeds/packages/libs/tiff
+SourceName: libtiff
+License: BSD-3-Clause
+LicenseFiles: COPYRIGHT
+Section: libs
+CPE-ID: cpe:/a:libtiff:libtiff
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 123016
+Filename: libtiff5_4.1.0-2_mipsel_24kc.ipk
+Size: 123534
+SHA256sum: e3908868cad472e4ecfdb8f2a0bbc715e31b54f61fbaa5a8b4d4baa57f8e49c4
+Description:  TIFF library
+
+Package: libtins
+Version: 4.2-4
+Depends: libc, libstdcpp6, libpcap1
+Source: feeds/packages/libs/libtins
+SourceName: libtins
+License: BSD-2-Clause
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Steven Hessing <steven.hessing@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 138951
+Filename: libtins_4.2-4_mipsel_24kc.ipk
+Size: 139505
+SHA256sum: d2f5129418ce509d99faee9c9c829d8e8a168d2bc6f3c9aebe0963f91d71752a
+Description:  libtins is a high-level, multiplatform C++ network packet sniffing and crafting library.
+
+Package: libtirpc
+Version: 1.2.6-2
+Depends: libc, libpthread
+Source: feeds/packages/libs/libtirpc
+SourceName: libtirpc
+License: BSD-3-Clause
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 51183
+Filename: libtirpc_1.2.6-2_mipsel_24kc.ipk
+Size: 52090
+SHA256sum: b5d70d2c1acf426151d7ffc7b0c84e688f5f173b7a93005a1d00bd0dfeae321e
+Description:  Library TI RPC for RPC bindings
+
+Package: libunbound
+Version: 1.10.1-4
+Depends: libc, libopenssl1.1, libmnl0, libevent2-7, libpthread
+Source: feeds/packages/net/unbound
+SourceName: libunbound
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: libs
+Require-User: unbound:unbound
+CPE-ID: cpe:/a:nlnetlabs:unbound
+Maintainer: Eric Luehrsen <ericluehrsen@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 344977
+Filename: libunbound_1.10.1-4_mipsel_24kc.ipk
+Size: 341423
+SHA256sum: 1dfebdc43bc84081f800e02562789d950f5e18d1e99a767c3671561380b8f5cb
+Description:  This package contains the Unbound library including 'libevent', 'libmnl', and
+ 'libpthread' to better handle large networks with heavy query loads. Options
+ are available to custom trim Unbound for smaller targets.
+
+Package: libunistring
+Version: 0.9.10-1
+Depends: libc
+Source: feeds/packages/libs/libunistring
+SourceName: libunistring
+License: GPL-3.0
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Espen Jürgensen <espenjurgensen+openwrt@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 576096
+Filename: libunistring_0.9.10-1_mipsel_24kc.ipk
+Size: 567952
+SHA256sum: 6898d0d26036c3f8054f5461df3472d3c3c22edd2427dbfd41b6b27cbf3957b3
+Description:  This library provides functions for manipulating Unicode strings and for manipulating C strings according to the Unicode standard.
+
+Package: libupnp
+Version: 1.12.1-1
+Depends: libc, libpthread
+Source: feeds/packages/libs/libupnp
+SourceName: libupnp
+License: BSD-3-Clause
+LicenseFiles: COPYING
+Section: libs
+CPE-ID: cpe:/a:libupnp_project:libupnp
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: mipsel_24kc
+Installed-Size: 82566
+Filename: libupnp_1.12.1-1_mipsel_24kc.ipk
+Size: 83578
+SHA256sum: c51c6860e4cdcd70853119dff98105323236041189c6d7011d0d9bb1e715f49b
+Description:  The portable SDK for UPnP Devices (libupnp) provides developers with an API and
+ open source code for building control points, devices, and bridges that are
+ compliant with Version 1.0 of the  Universal Plug and Play Device Architecture
+ Specification.
+
+Package: libuv1
+Version: 1.34.2-1
+Depends: libc, libpthread, librt
+Provides: libuv
+Source: feeds/packages/libs/libuv
+SourceName: libuv
+License: MIT
+LicenseFiles: LICENSE
+Section: libs
+CPE-ID: cpe:/a:libuv_project:libuv
+Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
+Architecture: mipsel_24kc
+Installed-Size: 52280
+Filename: libuv1_1.34.2-1_mipsel_24kc.ipk
+Size: 53162
+SHA256sum: 8b6a8c4e0482c34507602553a4a9a16bc2e2f1e2c3c4ef360406e32897480fb1
+Description:  libuv is a multi-platform support library with a focus on asynchronous I/O. It
+ was primarily developed for use by Node.js, but it's also used by Luvit, Julia,
+ pyuv, and others.
+
+Package: libvorbis
+Version: 1.3.6-1
+Depends: libc, libogg0
+Source: feeds/packages/libs/libvorbis
+SourceName: libvorbis
+License: BSD-3-Clause
+LicenseFiles: COPYING
+Section: libs
+CPE-ID: cpe:/a:xiph.org:libvorbis
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: mipsel_24kc
+Installed-Size: 189505
+Filename: libvorbis_1.3.6-1_mipsel_24kc.ipk
+Size: 189344
+SHA256sum: 997e4b137496723916e23f4fce6b5288805973eebf689ee55106f8ab40eb3b4d
+Description:  Vorbis is a general purpose audio and music encoding format
+ contemporary to MPEG-4's AAC and TwinVQ, the next generation beyond
+ MPEG audio layer 3. Unlike the MPEG sponsored formats (and other
+ proprietary formats such as RealAudio G2 and Windows' flavor of the
+ month), the Vorbis CODEC specification belongs to the public domain.
+ All the technical details are published and documented, and any
+ software entity may make full use of the format without license
+ fee, royalty or patent concerns.
+
+Package: libwebp
+Version: 1.1.0-2
+Depends: libc
+Source: feeds/packages/libs/libwebp
+SourceName: libwebp
+License: BSD-3-Clause
+LicenseFiles: COPYING
+Section: libs
+Architecture: mipsel_24kc
+Installed-Size: 133217
+Filename: libwebp_1.1.0-2_mipsel_24kc.ipk
+Size: 134100
+SHA256sum: 32e75a6f03a24882a6409e129b8f5de65b76d64a4dd25c1fc80776d4625cfecb
+Description:  The libwebp package contains a library for the WebP format.
+
+Package: libwebsockets-full
+Version: 3.2.1-1
+Depends: libc, zlib, libcap, libopenssl1.1, libuv1
+Provides: libwebsockets
+Source: feeds/packages/libs/libwebsockets
+SourceName: libwebsockets-full
+License: LGPL-2.1+exception
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Karl Palsson <karlp@etactica.com>
+Architecture: mipsel_24kc
+Installed-Size: 129052
+Filename: libwebsockets-full_3.2.1-1_mipsel_24kc.ipk
+Size: 129530
+SHA256sum: 192c73e669619431a196ee2a5789a61aa56ed7229ba1611abbf9ef0d34b28b04
+Description:  libwebsockets (Full - OpenSSL, libuv, plugins, CGI)
+
+Package: libwrap
+Version: 7.6-2
+Depends: libc
+Source: feeds/packages/libs/tcp_wrappers
+SourceName: libwrap
+License: BSD
+Section: libs
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Architecture: mipsel_24kc
+Installed-Size: 10092
+Filename: libwrap_7.6-2_mipsel_24kc.ipk
+Size: 10831
+SHA256sum: 57cf658f1d6f87bde2cf13281d2b9e3b925f44bd4176efc4847283c88ddccde3
+Description:  Security wrapper library for TCP services
+
+Package: libxml2
+Version: 2.9.10-1
+Depends: libc, libpthread, zlib
+Source: feeds/packages/libs/libxml2
+SourceName: libxml2
+License: MIT
+LicenseFiles: COPYING
+Section: libs
+CPE-ID: cpe:/a:xmlsoft:libxml2
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Architecture: mipsel_24kc
+Installed-Size: 425996
+Filename: libxml2_2.9.10-1_mipsel_24kc.ipk
+Size: 423946
+SHA256sum: 6cb27c67032441df420b792fde86e74d51670cf8dedb074a37ad08c71df5e133
+Description:  A library for manipulating XML and HTML resources.
+
+Package: libyaml-cpp0.6
+Version: 0.6.3-1
+Depends: libc, libstdcpp6
+Provides: libyaml-cpp
+Source: feeds/packages/libs/libyaml-cpp
+SourceName: libyaml-cpp
+License: MIT
+LicenseFiles: LICENSE
+Section: development
+CPE-ID: cpe:/a:yaml-cpp_project:yaml-cpp
+Maintainer: Steven Hessing <steven.hessing@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 79631
+Filename: libyaml-cpp0.6_0.6.3-1_mipsel_24kc.ipk
+Size: 80404
+SHA256sum: f6486841e3227a99ec88ba2a9690a0fa23e55d5b595a0a896ca6e088f6b5fc59
+Description:  yaml-cpp is a YAML parser and emitter in C++ matching the YAML 1.2 spec.
+
+Package: libzip-gnutls
+Version: 1.7.1-1
+Depends: libc, zlib, libgnutls
+Provides: libzip
+Source: feeds/packages/libs/libzip
+SourceName: libzip-gnutls
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Architecture: mipsel_24kc
+Installed-Size: 42643
+Filename: libzip-gnutls_1.7.1-1_mipsel_24kc.ipk
+Size: 43511
+SHA256sum: 476f0e6961ef3a889d0b6fe32bb6440216f8432d1b60971296423d3cd1be72fe
+Description:  A C library for reading, creating, and modifying zip archives.
+
+Package: libzstd
+Version: 1.4.5-2
+Depends: libc
+Source: feeds/packages/utils/zstd
+SourceName: libzstd
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Section: libs
+Architecture: mipsel_24kc
+Installed-Size: 334401
+Filename: libzstd_1.4.5-2_mipsel_24kc.ipk
+Size: 335180
+SHA256sum: 93eb411b41565bf0e99ae2c33e960082208684dd10f88f9e585a9cdf1a52104f
+Description:  Zstandard - Fast real-time compression algorithm.
+ This package provides libzstd library.
+
+Package: lua-bencode
+Version: 2.2.0-1
+Depends: libc, lua
+Source: feeds/packages/lang/lua-bencode
+SourceName: lua-bencode
+License: MIT
+Section: lang
+Maintainer: Lars Gierth <larsg@systemli.org>
+Architecture: all
+Installed-Size: 1566
+Filename: lua-bencode_2.2.0-1_all.ipk
+Size: 2379
+SHA256sum: ffa1a0e973f58f4ddfced9647087b656f28f4823a5db0618e7791cc55de65385
+Description:  This is a module for the lua programming language for decoding and encoding
+ bencoded data which can be used to read and write torrent files for bittorrent.
+
+Package: lua-sha2
+Version: 0.2.0-1
+Depends: libc, lua
+Source: feeds/packages/lang/lua-sha2
+SourceName: lua-sha2
+License: MIT
+Section: lang
+Maintainer: Lars Gierth <larsg@systemli.org>
+Architecture: mipsel_24kc
+Installed-Size: 7888
+Filename: lua-sha2_0.2.0-1_mipsel_24kc.ipk
+Size: 8730
+SHA256sum: 73d92d7dc6c2bbf3d4bdf8217dc3db94a927ea8145ac51a6f8f5f5f74439cbb7
+Description:  Lua Binding for the SHA-2 (SHA-256/384/512) BSD-licensed C implementation by Aaron Gifford.
+ Also contains a HMAC implementation in Lua.
+
+Package: luasocket
+Version: 2019-04-21-733af884-1
+Depends: libc, lua
+Source: feeds/packages/lang/luasocket
+SourceName: luasocket
+License: MIT
+LicenseFiles: LICENSE
+Section: lang
+Maintainer: W. Michael Petullo <mike@flyn.org>
+Architecture: mipsel_24kc
+Installed-Size: 52454
+Filename: luasocket_2019-04-21-733af884-1_mipsel_24kc.ipk
+Size: 53296
+SHA256sum: a0099caecef938c1cd109ff84f554bfa19c2a00de9b911396781960b146bd645
+Description:  LuaSocket is the most comprehensive networking support
+ library for the Lua language. It provides easy access to
+ TCP, UDP, DNS, SMTP, FTP, HTTP, MIME and much more.
+
+Package: lxc-attach
+Version: 4.0.2-3
+Depends: libc, lxc, lxc-common, libpthread, libcap, liblxc
+Source: feeds/packages/utils/lxc
+SourceName: lxc-attach
+License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
+Section: utils
+Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
+Architecture: mipsel_24kc
+Installed-Size: 22435
+Filename: lxc-attach_4.0.2-3_mipsel_24kc.ipk
+Size: 23216
+SHA256sum: 81326c4c7c8368da94fc8bca51438d2224771b193967de9ba51b76730e8b5642
+Description:  Utility lxc-attach from the LXC userspace tools
+
+Package: lxc-common
+Version: 4.0.2-3
+Depends: libc, lxc
+Source: feeds/packages/utils/lxc
+SourceName: lxc-common
+License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
+Section: utils
+Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
+Architecture: mipsel_24kc
+Installed-Size: 730
+Filename: lxc-common_4.0.2-3_mipsel_24kc.ipk
+Size: 1512
+SHA256sum: 928922af15263539a9f49e006a972979539e0200f04bdd60800482efcd3638db
+Description:  LXC common files
+
+Package: lxc-configs
+Version: 4.0.2-3
+Depends: libc, lxc
+Source: feeds/packages/utils/lxc
+SourceName: lxc-configs
+License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
+Section: utils
+Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
+Architecture: mipsel_24kc
+Installed-Size: 1535
+Filename: lxc-configs_4.0.2-3_mipsel_24kc.ipk
+Size: 2285
+SHA256sum: c368d9e3da5332fb19001b13929209dd5d2436f6d66103b07f6992b11ba05492
+Description:  LXC virtual machine common config files
+
+Package: lxc-console
+Version: 4.0.2-3
+Depends: libc, lxc, lxc-common, libpthread, libcap, liblxc
+Source: feeds/packages/utils/lxc
+SourceName: lxc-console
+License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
+Section: utils
+Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
+Architecture: mipsel_24kc
+Installed-Size: 5635
+Filename: lxc-console_4.0.2-3_mipsel_24kc.ipk
+Size: 6400
+SHA256sum: 592669af7b008dab9431ac9c7b582e8c9839385d390ac0037aff16ceca4b0a5b
+Description:  Utility lxc-console from the LXC userspace tools
+
+Package: lxc-create
+Version: 4.0.2-3
+Depends: libc, lxc, lxc-common, libpthread, libcap, liblxc, lxc-configs, lxc-hooks, lxc-templates, flock
+Source: feeds/packages/utils/lxc
+SourceName: lxc-create
+License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
+Section: utils
+Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
+Architecture: mipsel_24kc
+Installed-Size: 11789
+Filename: lxc-create_4.0.2-3_mipsel_24kc.ipk
+Size: 12578
+SHA256sum: 4d5b8e489348e193f3e622cc107071d7fc50cfbd8e437956ea8d8247e0b016d1
+Description:  Utility lxc-create from the LXC userspace tools
+
+Package: lxc-hooks
+Version: 4.0.2-3
+Depends: libc, lxc
+Source: feeds/packages/utils/lxc
+SourceName: lxc-hooks
+License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
+Section: utils
+Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
+Architecture: mipsel_24kc
+Installed-Size: 10918
+Filename: lxc-hooks_4.0.2-3_mipsel_24kc.ipk
+Size: 11694
+SHA256sum: f2ad1238d1bc2aca5df762fc03fe93e9470b763e3ac6effb3cec45a223e0e832
+Description:  LXC virtual machine hooks
+
+Package: lxc-templates
+Version: 4.0.2-3
+Depends: libc, lxc
+Source: feeds/packages/utils/lxc
+SourceName: lxc-templates
+License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
+Section: utils
+Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
+Architecture: mipsel_24kc
+Installed-Size: 10558
+Filename: lxc-templates_4.0.2-3_mipsel_24kc.ipk
+Size: 11305
+SHA256sum: aa42a03deccc59f2317e85723b47cf840020f28debaa489bae84df5190ef1468
+Description:  LXC virtual machine templates
+
+Package: lxc
+Version: 4.0.2-3
+Depends: libc
+Source: feeds/packages/utils/lxc
+SourceName: lxc
+License: LGPL-2.1-or-later BSD-2-Clause GPL-2.0
+Section: utils
+Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
+Architecture: mipsel_24kc
+Installed-Size: 105
+Filename: lxc_4.0.2-3_mipsel_24kc.ipk
+Size: 910
+SHA256sum: 272201f3f48a92bdbc04c6aa13bf538bca80e7ea8a7b41b3b0441ce314ecdb5b
+Description:  LXC is the userspace control package for Linux Containers, a lightweight
+ virtual system mechanism sometimes described as "chroot on steroids".
+
+Package: minidlna
+Version: 2019-12-09-0763719f-7
+Depends: libc, libpthread, libexif, libjpeg, libsqlite3-0, libffmpeg, libid3tag, libflac, libvorbis, libuuid1
+Source: feeds/packages/multimedia/minidlna
+SourceName: minidlna
+License: GPL-2.0-or-later BSD-3-Clause
+LicenseFiles: COPYING LICENCE.miniupnpd
+Section: multimedia
+Require-User: minidlna:minidlna
+Architecture: mipsel_24kc
+Installed-Size: 113474
+Filename: minidlna_2019-12-09-0763719f-7_mipsel_24kc.ipk
+Size: 114203
+SHA256sum: ccef591a3c405258bc8b1ae9e2f90ab9e6decda4ad8ae97108b2158b9bf7f423
+Description:  MiniDLNA (aka ReadyDLNA) is server software with the aim of
+ being fully compliant with DLNA/UPnP-AV clients.
+
+Package: miniupnpd
+Version: 2.0.20170421-2
+Depends: libc, iptables, libip4tc2, libuuid1
+Source: feeds/packages/net/miniupnpd
+SourceName: miniupnpd
+License: BSD-3-Clause
+Section: net
+Maintainer: Markus Stenberg <fingon@iki.fi>
+Architecture: mipsel_24kc
+Installed-Size: 46613
+Filename: miniupnpd_2.0.20170421-2_mipsel_24kc.ipk
+Size: 47567
+SHA256sum: 4e6ff90f480ecc77132822f263f545d4588c3239f2e315e4952b56919323faf3
+Description:  Lightweight UPnP IGD, NAT-PMP & PCP daemon
+
+Package: mjpg-streamer
+Version: 2019-05-24-1
+Depends: libc, libpthread, libjpeg
+Source: feeds/packages/multimedia/mjpg-streamer
+SourceName: mjpg-streamer
+License: GPL-2.0-or-later
+LicenseFiles: LICENSE
+Section: multimedia
+Maintainer: Roger D <rogerdammit@gmail.com>, Ted Hess <thess@kitschensync.net>
+Architecture: mipsel_24kc
+Installed-Size: 6651
+Filename: mjpg-streamer_2019-05-24-1_mipsel_24kc.ipk
+Size: 7520
+SHA256sum: d026af302624cb180cba499750d21ed361497cbb22a7025f4cbf3aed328aca3a
+Description:  Streaming application for Linux-UVC compatible webcams
+
+Package: musl-fts
+Version: 1.2.7-1
+Depends: libc, libpthread
+Source: feeds/packages/libs/musl-fts
+SourceName: musl-fts
+License: LGPL-2.1
+LicenseFiles: COPYING AUTHORS
+Section: libs
+Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 4556
+Filename: musl-fts_1.2.7-1_mipsel_24kc.ipk
+Size: 5353
+SHA256sum: 3cbab81014e977d154d8bdfa81e7b5293ef6076020de6a9eac948c0abdf2ac8a
+Description:  The musl-fts package implements the fts(3) functions fts_open, fts_read, fts_children, fts_set and fts_close, which are missing in musl libc.
+
+Package: mwan3
+Version: 2.8.8-2
+Depends: libc, ip, ipset, iptables, iptables-mod-conntrack-extra, iptables-mod-ipopt, jshn
+Source: feeds/packages/net/mwan3
+SourceName: mwan3
+License: GPL-2.0
+Section: net
+Maintainer: Florian Eckert <fe@dev.tdt.de>
+Architecture: all
+Installed-Size: 13234
+Filename: mwan3_2.8.8-2_all.ipk
+Size: 14232
+SHA256sum: adc9a26b8295bb76e36c73ce016c82d620d316e197ee3c70c6e71b8c1e37983a
+Description:  Hotplug script which makes configuration of multiple WAN interfaces simple
+ and manageable. With loadbalancing/failover support for up to 250 wan
+ interfaces, connection tracking and an easy to manage traffic ruleset.
+
+Package: mxml
+Version: 3.1-1
+Depends: libc, zlib
+Source: feeds/packages/libs/mxml
+SourceName: mxml
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Espen Jürgensen <espenjurgensen+openwrt@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 16537
+Filename: mxml_3.1-1_mipsel_24kc.ipk
+Size: 17156
+SHA256sum: bf093d2894ba4e99ed2a540228a823599c6b1e3bda33f0e7b5eb7736ca2d1005
+Description:  A small xml library.
+
+Package: netdata
+Version: 1.23.2-1
+Depends: libc, zlib, libuuid1, libuv1, libmnl0, libjson-c4
+Source: feeds/packages/admin/netdata
+SourceName: netdata
+License: GPL-3.0-or-later
+LicenseFiles: COPYING
+Section: admin
+CPE-ID: cpe:/a:my-netdata:netdata
+Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>, Daniel Engberg <daniel.engberg.lists@pyret.net>
+Architecture: mipsel_24kc
+Installed-Size: 1847873
+Filename: netdata_1.23.2-1_mipsel_24kc.ipk
+Size: 1846939
+SHA256sum: cea76acbf749f9fd2190539dee1591090a83436ea659feafb0ae559c4bdfb68c
+Description:  netdata is a highly optimized Linux daemon providing real-time performance
+ monitoring for Linux systems, applications and SNMP devices over the web.
+ 
+ If you want to use Python plugins install python3, python3-yaml and
+ python3-urllib3
+
+Package: nfs-kernel-server-utils
+Version: 2.3.4-2
+Depends: libc, nfs-kernel-server
+Source: feeds/packages/net/nfs-kernel-server
+SourceName: nfs-kernel-server-utils
+Section: net
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Architecture: mipsel_24kc
+Installed-Size: 11690
+Filename: nfs-kernel-server-utils_2.3.4-2_mipsel_24kc.ipk
+Size: 12370
+SHA256sum: d1e39078e14a6828df5a2c6df302f6600fcdb2c9d7e100b66c3d81bd2b9bcc22
+Description:  NFS server utils
+
+Package: nfs-kernel-server
+Version: 2.3.4-2
+Depends: libc, libwrap, libblkid1, libuuid1, libtirpc, kmod-fs-nfsd, kmod-fs-nfs, kmod-fs-nfs-v4, rpcbind, nfs-utils-libs, libkeyutils1, libdevmapper
+Source: feeds/packages/net/nfs-kernel-server
+SourceName: nfs-kernel-server
+Section: net
+Require-User: nfs:nfs
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Architecture: mipsel_24kc
+Installed-Size: 133330
+Filename: nfs-kernel-server_2.3.4-2_mipsel_24kc.ipk
+Size: 133554
+SHA256sum: 76f2c942012b0a30381b26951596708fd91e61ed5b9595b0bc076a5bcae94aee
+Description:  Kernel NFS server support
+
+Package: nfs-utils-libs
+Version: 2.3.4-2
+Depends: libc, libwrap, libblkid1, libuuid1, libtirpc, libkeyutils1, libdevmapper
+Source: feeds/packages/net/nfs-kernel-server
+SourceName: nfs-utils-libs
+Section: utils
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Architecture: mipsel_24kc
+Installed-Size: 14323
+Filename: nfs-utils-libs_2.3.4-2_mipsel_24kc.ipk
+Size: 15060
+SHA256sum: f6d97a8991d8a65bff8b1a4ff0c564ef6c68a51c4f0478666b081505104ab06a
+Description:  Libraries provided by nfs-utils
+
+Package: nfs-utils
+Version: 2.3.4-2
+Depends: libc, libwrap, libblkid1, libuuid1, libtirpc, libkeyutils1, libdevmapper
+Source: feeds/packages/net/nfs-kernel-server
+SourceName: nfs-utils
+Section: utils
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Architecture: mipsel_24kc
+Installed-Size: 44136
+Filename: nfs-utils_2.3.4-2_mipsel_24kc.ipk
+Size: 44984
+SHA256sum: 007e9a0993010d8018aa259fd1819c67df0470f893c55550f06b7f6e368fcb7d
+Description:  Updated mount.nfs command - allows mounting nfs4 volumes
+
+Package: nginx-util
+Version: 1.4-1
+Depends: libc, libstdcpp6, libubus20191227, libubox20191228, libpthread
+Conflicts: nginx-ssl-util-nopcre, nginx-ssl-util
+Source: feeds/packages/net/nginx-util
+SourceName: nginx-util
+Section: net
+Maintainer: Peter Stadler <peter.stadler@student.uibk.ac.at>
+Architecture: mipsel_24kc
+Installed-Size: 14234
+Filename: nginx-util_1.4-1_mipsel_24kc.ipk
+Size: 15006
+SHA256sum: cf42c2245624793d76e66f8c6161895491f6f84259d8a603f55b3b3699bad96c
+Description:  Utility that builds dynamically LAN listen directives for Nginx.
+
+Package: nginx
+Version: 1.19.0-1
+Depends: libc, libpcre, zlib, libpthread, libubus20191227, libblobmsg-json, libjson-c4, nginx-util
+Source: feeds/packages/net/nginx
+SourceName: nginx
+License: 2-clause BSD-like license
+Section: net
+CPE-ID: cpe:/a:nginx:nginx
+Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 306291
+Filename: nginx_1.19.0-1_mipsel_24kc.ipk
+Size: 287421
+SHA256sum: 5330b4ff2a708e9bb17704fb075d6fa8b983d5fa89200f3b6ddeaa1be1132733
+Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev. (Some module require SSL module enable to show up in config menu)
+
+Package: nlbwmon
+Version: 2020-04-11.1-34a18876-2
+Depends: libc, libubox20191228, libnl-tiny, zlib, kmod-nf-conntrack-netlink
+Source: feeds/packages/net/nlbwmon
+SourceName: nlbwmon
+License: ISC
+LicenseFiles: COPYING
+Section: net
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 16549
+Filename: nlbwmon_2020-04-11.1-34a18876-2_mipsel_24kc.ipk
+Size: 17391
+SHA256sum: 4f470c9df8329b176317fa4906e55ccae3d8206bea53643d1ae5d56e906f5797
+Description:  LEDE Traffic Usage Monitor
+
+Package: noddos
+Version: 0.5.5-4
+Depends: libc, libstdcpp6, libnetfilter-conntrack3, libcurl4, libopenssl1.1, openssl-util, ca-bundle, wget, bzip2, libtins, ipset, libpthread, libyaml-cpp0.6
+Source: feeds/packages/net/noddos
+SourceName: noddos
+License: GPL-3.0-or-later
+LicenseFiles: LICENSE.md
+Section: net
+Maintainer: Steven Hessing <steven.hessing@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 164334
+Filename: noddos_0.5.5-4_mipsel_24kc.ipk
+Size: 165634
+SHA256sum: 2702a6204c46c39789622b865f7ad92b7ed2b8d8d2510dd39b87f616971f8953
+Description:  Noddos discovers what devices you have in your network and tailors the firewall rules based on whitelisted flows for that device. Noddos downloads the firewall rules periodically from the cloud. In order to support creating these firewall rules, noddos can, after opt-in, upload anonimized traffic statistics for each device to the cloud. The Luci interface is available in the luci-apps-noddos package. For information, visit https://www.noddos.io/
+
+Package: ntpclient
+Version: 2015_365-4
+Depends: libc, librt
+Source: feeds/packages/net/ntpclient
+SourceName: ntpclient
+License: GPL-2.0
+Section: net
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: mipsel_24kc
+Installed-Size: 11257
+Filename: ntpclient_2015_365-4_mipsel_24kc.ipk
+Size: 12031
+SHA256sum: 7458559bbac29485a6917bffc6a085bfb2fdde5db73712280d2a4a202f27fb07
+Description:  NTP client for setting system time from NTP servers.
+
+Package: ocserv
+Version: 1.0.1-1
+Depends: libc, libhttp-parser, libgnutls, certtool, libncurses6, libreadline8, libprotobuf-c, libev, kmod-tun
+Source: feeds/packages/net/ocserv
+SourceName: ocserv
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Section: net
+Require-User: ocserv=72:ocserv=72
+Maintainer: Nikos Mavrogiannopoulos <n.mavrogiannopoulos@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 165002
+Filename: ocserv_1.0.1-1_mipsel_24kc.ipk
+Size: 165625
+SHA256sum: adc7e90ab3699cd125cafaa6ce5d947c400d8021a86b54abb6cc41c767f53be7
+Description:  OpenConnect server (ocserv) is an SSL VPN server. Its purpose is to be
+ a secure, small, fast and configurable VPN server. It implements the
+ OpenConnect SSL VPN protocol, and has also (currently experimental)
+ compatibility with clients using the AnyConnect SSL VPN protocol. The
+ OpenConnect VPN protocol uses the standard IETF security protocols such
+ as TLS 1.2, and Datagram TLS to provide the secure VPN service.
+
+Package: oniguruma5
+Version: 6.9.5_rev1-3
+Depends: libc
+Provides: oniguruma
+Source: feeds/packages/libs/oniguruma
+SourceName: oniguruma
+License: BSD-2-Clause
+LicenseFiles: COPYING
+Section: libs
+CPE-ID: cpe:/a:oniguruma_project:oniguruma
+Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 164677
+Filename: oniguruma5_6.9.5_rev1-3_mipsel_24kc.ipk
+Size: 162139
+SHA256sum: 71215090c87cde4a5149d758873efcec38df5863ba35a4fb28340551ea31be8f
+Description:  Oniguruma is a modern and flexible regular expressions library.
+ It encompasses features from different regular expression implementations that
+ traditionally exist in different languages.
+ 
+ Character encoding can be specified per regular expression object.
+
+Package: p910nd
+Version: 0.97-8
+Depends: libc
+Source: feeds/packages/net/p910nd
+SourceName: p910nd
+License: GPLv2
+LicenseFiles: COPYING
+Section: net
+Require-User: p910nd=393:lp=7
+Maintainer: Philipp Kerling <pkerling@casix.org>
+Architecture: mipsel_24kc
+Installed-Size: 5998
+Filename: p910nd_0.97-8_mipsel_24kc.ipk
+Size: 6964
+SHA256sum: fa8df44e76c7b319ae43a2851188ee816934402ed63609be107bec58135747c4
+Description:  p910nd is a small daemon that copies any data received on
+ the port it is listening on to the corresponding printer
+ port. It is primarily intended for diskless Linux hosts
+ running as printer drivers but there is no reason why it
+ could not be used on diskful hosts. Port 9100 is copied
+ to /dev/lp0, 9101 to /dev/lp1 and 9102 to /dev/lp2. The
+ default is port 9100 to /dev/lp0.
+
+Package: pagekitec
+Version: 0.91.200311C-1
+Depends: libc, libpagekite
+Source: feeds/packages/net/pagekitec
+SourceName: pagekitec
+License: Apache-2.0
+Section: net
+Maintainer: Karl Palsson <karlp@tweak.net.au>
+Architecture: mipsel_24kc
+Installed-Size: 5340
+Filename: pagekitec_0.91.200311C-1_mipsel_24kc.ipk
+Size: 6448
+SHA256sum: afe55030d6a7d4e3d5a54825297ae4e75450d0e542cfce77614248a5ae0643e9
+Description:  PageKite is a system for running publicly visible servers (generally
+ web servers) on machines without a direct connection to the Internet,
+ such as mobile devices or computers behind restrictive firewalls.
+ PageKite works around NAT, firewalls and IP-address limitations by
+ using a combination of tunnels and reverse proxies.
+ 
+ This package provides an implementation of the PageKite Protocol in C,
+ optimized for high-performance or embedded applications.
+ 
+ 
+ This package contains a basic backend useful for exposing http/ssh servers.
+ 
+ Basic UCI support for configuring this backend is also included.
+
+Package: php7-fpm
+Version: 7.4.7-1
+Depends: libc, php7
+Source: feeds/packages/lang/php7
+SourceName: php7-fpm
+License: PHP-3.01
+LicenseFiles: LICENSE
+Section: lang
+CPE-ID: cpe:/a:php:php
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Architecture: mipsel_24kc
+Installed-Size: 1465498
+Filename: php7-fpm_7.4.7-1_mipsel_24kc.ipk
+Size: 1462335
+SHA256sum: 5a7f52a3d3eda9d52a36eaf2232692be012f10af29175d7fb345cf55632a4600
+Description:  PHP is a widely-used general-purpose scripting language that is especially
+ suited for Web development and can be embedded into HTML.
+ This package contains the FastCGI Process Manager of the PHP7 interpreter.
+
+Package: php7-mod-curl
+Version: 7.4.7-1
+Depends: libc, php7, libcurl4
+Source: feeds/packages/lang/php7
+SourceName: php7-mod-curl
+License: PHP-3.01
+LicenseFiles: LICENSE
+Section: lang
+CPE-ID: cpe:/a:php:php
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Architecture: mipsel_24kc
+Installed-Size: 28455
+Filename: php7-mod-curl_7.4.7-1_mipsel_24kc.ipk
+Size: 29154
+SHA256sum: 07665d76ae6496fd689f4ddd211fc222c1db8e6df79f599170db2349cf9547eb
+Description:  cURL shared module
+
+Package: php7-mod-gd
+Version: 7.4.7-1
+Depends: libc, php7, libgd-full
+Source: feeds/packages/lang/php7
+SourceName: php7-mod-gd
+License: PHP-3.01
+LicenseFiles: LICENSE
+Section: lang
+CPE-ID: cpe:/a:php:php
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Architecture: mipsel_24kc
+Installed-Size: 24222
+Filename: php7-mod-gd_7.4.7-1_mipsel_24kc.ipk
+Size: 24840
+SHA256sum: af777db3c612e30255831499d1bacac4bcb0e8c1f6d6980d50e5af6c42b917e8
+Description:  GD graphics shared module
+
+Package: php7-mod-iconv
+Version: 7.4.7-1
+Depends: libc, php7
+Source: feeds/packages/lang/php7
+SourceName: php7-mod-iconv
+License: PHP-3.01
+LicenseFiles: LICENSE
+Section: lang
+CPE-ID: cpe:/a:php:php
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Architecture: mipsel_24kc
+Installed-Size: 16011
+Filename: php7-mod-iconv_7.4.7-1_mipsel_24kc.ipk
+Size: 16770
+SHA256sum: 092f870e312399b8f6639e52c4af9758fdb074f27ad08a0e2df3619590563046
+Description:  iConv shared module
+
+Package: php7-mod-json
+Version: 7.4.7-1
+Depends: libc, php7
+Source: feeds/packages/lang/php7
+SourceName: php7-mod-json
+License: PHP-3.01
+LicenseFiles: LICENSE
+Section: lang
+CPE-ID: cpe:/a:php:php
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Architecture: mipsel_24kc
+Installed-Size: 15931
+Filename: php7-mod-json_7.4.7-1_mipsel_24kc.ipk
+Size: 16653
+SHA256sum: fb90eff9aee339a303ff0eca22800a6e2975a3625d0f68f15386e5bf6bf29b1a
+Description:  JSON shared module
+
+Package: php7-mod-mbstring
+Version: 7.4.7-1
+Depends: libc, php7, oniguruma5
+Source: feeds/packages/lang/php7
+SourceName: php7-mod-mbstring
+License: PHP-3.01
+LicenseFiles: LICENSE
+Section: lang
+CPE-ID: cpe:/a:php:php
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Architecture: mipsel_24kc
+Installed-Size: 547931
+Filename: php7-mod-mbstring_7.4.7-1_mipsel_24kc.ipk
+Size: 547938
+SHA256sum: 707b663c51dd81c2c45745708f2c8fcce5e0e9e746e39df518d01133e3edde3e
+Description:  MBString shared module
+
+Package: php7-mod-mysqlnd
+Version: 7.4.7-1
+Depends: libc, php7
+Source: feeds/packages/lang/php7
+SourceName: php7-mod-mysqlnd
+License: PHP-3.01
+LicenseFiles: LICENSE
+Section: lang
+CPE-ID: cpe:/a:php:php
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Architecture: mipsel_24kc
+Installed-Size: 75938
+Filename: php7-mod-mysqlnd_7.4.7-1_mipsel_24kc.ipk
+Size: 75814
+SHA256sum: 9c74055d9141a6e5b1af390e0bc53b45b8f58146b6c0ac99faeb7fa8561e0970
+Description:  MySQL Native Driver shared module
+
+Package: php7-mod-opcache
+Version: 7.4.7-1
+Depends: libc, php7
+Source: feeds/packages/lang/php7
+SourceName: php7-mod-opcache
+License: PHP-3.01
+LicenseFiles: LICENSE
+Section: lang
+CPE-ID: cpe:/a:php:php
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Architecture: mipsel_24kc
+Installed-Size: 193238
+Filename: php7-mod-opcache_7.4.7-1_mipsel_24kc.ipk
+Size: 192762
+SHA256sum: 3429cf9d52675e6d4c17172b12f1e3a2139f1693dfd717a84c58f2acd2c79fe4
+Description:  OPcache shared module
+
+Package: php7-mod-pdo-mysql
+Version: 7.4.7-1
+Depends: libc, php7, php7-mod-pdo, php7-mod-mysqlnd
+Source: feeds/packages/lang/php7
+SourceName: php7-mod-pdo-mysql
+License: PHP-3.01
+LicenseFiles: LICENSE
+Section: lang
+CPE-ID: cpe:/a:php:php
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Architecture: mipsel_24kc
+Installed-Size: 9355
+Filename: php7-mod-pdo-mysql_7.4.7-1_mipsel_24kc.ipk
+Size: 10151
+SHA256sum: e7379488a58f9dcbc7aedb3e4482e590a63d1c70fe0f06e43920d7930bf1a978
+Description:  PDO driver for MySQL shared module
+
+Package: php7-mod-pdo-sqlite
+Version: 7.4.7-1
+Depends: libc, php7, php7-mod-pdo, libsqlite3-0, librt
+Source: feeds/packages/lang/php7
+SourceName: php7-mod-pdo-sqlite
+License: PHP-3.01
+LicenseFiles: LICENSE
+Section: lang
+CPE-ID: cpe:/a:php:php
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Architecture: mipsel_24kc
+Installed-Size: 9479
+Filename: php7-mod-pdo-sqlite_7.4.7-1_mipsel_24kc.ipk
+Size: 10246
+SHA256sum: ad16dd176f485a035305b1fd0c6db824d8a29fee612088bed94ee35f2cd6c0fa
+Description:  PDO driver for SQLite 3.x shared module
+
+Package: php7-mod-pdo
+Version: 7.4.7-1
+Depends: libc, php7
+Source: feeds/packages/lang/php7
+SourceName: php7-mod-pdo
+License: PHP-3.01
+LicenseFiles: LICENSE
+Section: lang
+CPE-ID: cpe:/a:php:php
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Architecture: mipsel_24kc
+Installed-Size: 35536
+Filename: php7-mod-pdo_7.4.7-1_mipsel_24kc.ipk
+Size: 36236
+SHA256sum: e5df35d650fac6b07f7e13ea78014c525cb2195a74ffcd50867f8b1e4165a68d
+Description:  PHP Data Objects shared module
+
+Package: php7-mod-session
+Version: 7.4.7-1
+Depends: libc, php7
+Source: feeds/packages/lang/php7
+SourceName: php7-mod-session
+License: PHP-3.01
+LicenseFiles: LICENSE
+Section: lang
+CPE-ID: cpe:/a:php:php
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Architecture: mipsel_24kc
+Installed-Size: 29400
+Filename: php7-mod-session_7.4.7-1_mipsel_24kc.ipk
+Size: 30112
+SHA256sum: d4f2e91913c3b523e59b96e9b78e78646ccf9780c0fc140dcac3fccaf61b8c6f
+Description:  Session shared module
+
+Package: php7-mod-sqlite3
+Version: 7.4.7-1
+Depends: libc, php7, libsqlite3-0
+Source: feeds/packages/lang/php7
+SourceName: php7-mod-sqlite3
+License: PHP-3.01
+LicenseFiles: LICENSE
+Section: lang
+CPE-ID: cpe:/a:php:php
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Architecture: mipsel_24kc
+Installed-Size: 15855
+Filename: php7-mod-sqlite3_7.4.7-1_mipsel_24kc.ipk
+Size: 16548
+SHA256sum: 9a122961acfae84bf8eae7804dcd99cdd11d8739d992af12e2da6bfadb3e4121
+Description:  SQLite3 shared module
+
+Package: php7-mod-zip
+Version: 7.4.7-1
+Depends: libc, php7, libzip
+Source: feeds/packages/lang/php7
+SourceName: php7-mod-zip
+License: PHP-3.01
+LicenseFiles: LICENSE
+Section: lang
+CPE-ID: cpe:/a:php:php
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Architecture: mipsel_24kc
+Installed-Size: 18354
+Filename: php7-mod-zip_7.4.7-1_mipsel_24kc.ipk
+Size: 19082
+SHA256sum: 6a07cd8f967430af1af6cb8b7b1ecfe26960271be3ba006eb527b8288273f152
+Description:  ZIP shared module
+
+Package: php7
+Version: 7.4.7-1
+Depends: libc, libpcre2, zlib
+Source: feeds/packages/lang/php7
+SourceName: php7
+License: PHP-3.01
+LicenseFiles: LICENSE
+Section: lang
+CPE-ID: cpe:/a:php:php
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Architecture: mipsel_24kc
+Installed-Size: 2201
+Filename: php7_7.4.7-1_mipsel_24kc.ipk
+Size: 3230
+SHA256sum: eeb7469e07ca202dc55a5398b4728ff2cfab16b8dcc7417007c4af7250f1d317
+Description:  PHP is a widely-used general-purpose scripting language that is especially
+ suited for Web development and can be embedded into HTML.
+ This package contains only the PHP config file. You must actually choose
+ your PHP flavour (cli, cgi or fastcgi).
+ 
+ Please note, that installing php5 and php7 in parallel on the same target
+ is not supported in OpenWrt/LEDE.
+
+Package: polipo
+Version: 1.1.1-2
+Depends: libc
+Source: feeds/packages/net/polipo
+SourceName: polipo
+Section: net
+CPE-ID: cpe:/a:pps.jussieu:polipo
+Maintainer: Gabriel Kerneis <gabriel@kerneis.info>
+Architecture: mipsel_24kc
+Installed-Size: 87034
+Filename: polipo_1.1.1-2_mipsel_24kc.ipk
+Size: 87926
+SHA256sum: b33f44280c19fab5543b0e5ca5c6d81b1baf7b81d709e1749b01acbd9a465e58
+Description:  Polipo is a small and fast caching web proxy (a web cache, an HTTP proxy,
+ a proxy server). While Polipo was designed to be used by one person or a
+ small group of people, there is nothing that prevents it from being used
+ by a larger group.
+
+Package: privoxy
+Version: 3.0.28-1
+Depends: libc, libpcre, libpthread, zlib
+Source: feeds/packages/net/privoxy
+SourceName: privoxy
+License: GPL-2.0
+LicenseFiles: LICENSE
+Section: net
+Require-User: privoxy=8118:privoxy=8118
+CPE-ID: cpe:/a:privoxy:privoxy
+Architecture: mipsel_24kc
+Installed-Size: 180050
+Filename: privoxy_3.0.28-1_mipsel_24kc.ipk
+Size: 180914
+SHA256sum: 4d7df565c7fe98cba624b56ca2c9b6819f7490cdaf7f6af37fc9743746978307
+Description:  Privoxy WEB Proxy - Homepage: www.privoxy.org
+
+Package: python3-asyncio
+Version: 3.8.3-2
+Depends: libc, python3-light
+Source: feeds/packages/lang/python/python3
+SourceName: python3-asyncio
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 142232
+Filename: python3-asyncio_3.8.3-2_mipsel_24kc.ipk
+Size: 143199
+SHA256sum: b56a6aa65ddf9b6eb435a6299149e1fbf26d7cedbd22bae009a4e271662c46f4
+Description:  Python 3.8 asyncio module
+
+Package: python3-base
+Version: 3.8.3-2
+Depends: libc, libpthread, zlib
+Source: feeds/packages/lang/python/python3
+SourceName: python3-base
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 1102547
+Filename: python3-base_3.8.3-2_mipsel_24kc.ipk
+Size: 1098110
+SHA256sum: f26218b15ca525df0bbe3c840c4e2f96041f3a1a4e9d85adae1acb09b2aa6fe8
+Description:  This package contains only the interpreter and the bare minimum
+ for the interpreter to start.
+
+Package: python3-cgi
+Version: 3.8.3-2
+Depends: libc, python3-light, python3-email
+Source: feeds/packages/lang/python/python3
+SourceName: python3-cgi
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 12006
+Filename: python3-cgi_3.8.3-2_mipsel_24kc.ipk
+Size: 12892
+SHA256sum: 321afd364a284c5fb0d23538afaee420c07c8def8d9ebfd91da8a28768afb7d9
+Description:  Python 3.8 cgi module
+
+Package: python3-cgitb
+Version: 3.8.3-2
+Depends: libc, python3-light, python3-cgi, python3-pydoc
+Source: feeds/packages/lang/python/python3
+SourceName: python3-cgitb
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 5518
+Filename: python3-cgitb_3.8.3-2_mipsel_24kc.ipk
+Size: 6375
+SHA256sum: 1b6e6e776e587acdf18a5209f717248bc6dffa33ecfdf315b684e18411ac4a63
+Description:  Python 3.8 cgitb module
+
+Package: python3-codecs
+Version: 3.8.3-2
+Depends: libc, python3-light
+Source: feeds/packages/lang/python/python3
+SourceName: python3-codecs
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 757373
+Filename: python3-codecs_3.8.3-2_mipsel_24kc.ipk
+Size: 732354
+SHA256sum: 23c1e9574a76c6877220cae3ce13c734b03909552e0c48c1bf6446613f67b967
+Description:  Python 3.8 codecs + unicode support
+
+Package: python3-ctypes
+Version: 3.8.3-2
+Depends: libc, python3-light
+Source: feeds/packages/lang/python/python3
+SourceName: python3-ctypes
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 69950
+Filename: python3-ctypes_3.8.3-2_mipsel_24kc.ipk
+Size: 70878
+SHA256sum: e788cdc506dbf5c41c47f60179bac36547819333430ce267fbd635c2e295076b
+Description:  Python 3.8 ctypes module
+
+Package: python3-dbm
+Version: 3.8.3-2
+Depends: libc, python3-light, libdb47
+Source: feeds/packages/lang/python/python3
+SourceName: python3-dbm
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 10720
+Filename: python3-dbm_3.8.3-2_mipsel_24kc.ipk
+Size: 11565
+SHA256sum: 64b3ed7f77aac1abfb32d5a9155a5b13c7768f6586b17e5be7e784e6ad788c65
+Description:  Python 3.8 dbm module
+
+Package: python3-decimal
+Version: 3.8.3-2
+Depends: libc, python3-light
+Source: feeds/packages/lang/python/python3
+SourceName: python3-decimal
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 80986
+Filename: python3-decimal_3.8.3-2_mipsel_24kc.ipk
+Size: 81696
+SHA256sum: d9f064c84f14c73aa868b162a6a844e7ad3a86dbd2e567fa7c6dfbd51a638758
+Description:  Python 3.8 decimal module
+
+Package: python3-distutils
+Version: 3.8.3-2
+Depends: libc, python3-light
+Source: feeds/packages/lang/python/python3
+SourceName: python3-distutils
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 176897
+Filename: python3-distutils_3.8.3-2_mipsel_24kc.ipk
+Size: 177884
+SHA256sum: 761e02d0ad6f8c5bd27c2c8a841674031f4ae339ee47cb8e14f0e043dfe5493d
+Description:  Python 3.8 distutils module
+
+Package: python3-email
+Version: 3.8.3-2
+Depends: libc, python3-light
+Source: feeds/packages/lang/python/python3
+SourceName: python3-email
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 113091
+Filename: python3-email_3.8.3-2_mipsel_24kc.ipk
+Size: 114095
+SHA256sum: dc332f4d861d802764f9a022358ff204d3cf482ba40217b87c231a1ab9f6e371
+Description:  Python 3.8 email module
+
+Package: python3-gdbm
+Version: 3.8.3-2
+Depends: libc, python3-light, libgdbm
+Source: feeds/packages/lang/python/python3
+SourceName: python3-gdbm
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 6583
+Filename: python3-gdbm_3.8.3-2_mipsel_24kc.ipk
+Size: 7463
+SHA256sum: e2666f4ecb4ed127dcee16012640826455ab8ebc7e068d851ad94780c8ad47c7
+Description:  Python 3.8 gdbm module
+
+Package: python3-light
+Version: 3.8.3-2
+Depends: libc, python3-base, libffi, libbz2-1.0, libuuid1
+Source: feeds/packages/lang/python/python3
+SourceName: python3-light
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 1789045
+Filename: python3-light_3.8.3-2_mipsel_24kc.ipk
+Size: 1789603
+SHA256sum: 5913e190e0ec173b9ada784596f65bce4de48d146213e75fd9754f50b7c8c2d9
+Description:  This package is essentially the python3-base package plus
+ a few of the rarely used (and big) libraries stripped out
+ into separate packages.
+
+Package: python3-logging
+Version: 3.8.3-2
+Depends: libc, python3-light
+Source: feeds/packages/lang/python/python3
+SourceName: python3-logging
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 51479
+Filename: python3-logging_3.8.3-2_mipsel_24kc.ipk
+Size: 52438
+SHA256sum: 8bd11ddd3548df0cea00cae7537c70130f49bd0ef6597aa596ac556a08717ab3
+Description:  Python 3.8 logging module
+
+Package: python3-lzma
+Version: 3.8.3-2
+Depends: libc, python3-light, liblzma
+Source: feeds/packages/lang/python/python3
+SourceName: python3-lzma
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 15535
+Filename: python3-lzma_3.8.3-2_mipsel_24kc.ipk
+Size: 16346
+SHA256sum: 17fbb61d9bbe55d1e756835ab3f9cba7d5b2c880c6acf8f503678f8f5caf6be7
+Description:  Python 3.8 lzma module
+
+Package: python3-multiprocessing
+Version: 3.8.3-2
+Depends: libc, python3-light
+Source: feeds/packages/lang/python/python3
+SourceName: python3-multiprocessing
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 99529
+Filename: python3-multiprocessing_3.8.3-2_mipsel_24kc.ipk
+Size: 100544
+SHA256sum: bce428fecefe08a7f77f93a5875c9ff9e14fb6d3a8fc66992c95ae6c081917e0
+Description:  Python 3.8 multiprocessing
+
+Package: python3-ncurses
+Version: 3.8.3-2
+Depends: libc, python3-light, libncurses6
+Source: feeds/packages/lang/python/python3
+SourceName: python3-ncurses
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 43430
+Filename: python3-ncurses_3.8.3-2_mipsel_24kc.ipk
+Size: 44149
+SHA256sum: b147800e555972627765bfa6496746fe3873a39611b7927b7f758f093bea3c04
+Description:  Python 3.8 ncurses module
+
+Package: python3-openssl
+Version: 3.8.3-2
+Depends: libc, python3-light, libopenssl1.1, ca-certs
+Source: feeds/packages/lang/python/python3
+SourceName: python3-openssl
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 58590
+Filename: python3-openssl_3.8.3-2_mipsel_24kc.ipk
+Size: 58206
+SHA256sum: 34aa6392a32ba3a9f269d351c8efe04a2bf060092c3661200740093281f968b1
+Description:  Python 3.8 SSL module
+
+Package: python3-pydoc
+Version: 3.8.3-2
+Depends: libc, python3-light
+Source: feeds/packages/lang/python/python3
+SourceName: python3-pydoc
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 188789
+Filename: python3-pydoc_3.8.3-2_mipsel_24kc.ipk
+Size: 189694
+SHA256sum: e649f157d49e232811f73da0e2992ab3321b89193955722f41a5c14285415a45
+Description:  Python 3.8 pydoc module
+
+Package: python3-sqlite3
+Version: 3.8.3-2
+Depends: libc, python3-light, libsqlite3-0
+Source: feeds/packages/lang/python/python3
+SourceName: python3-sqlite3
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 26808
+Filename: python3-sqlite3_3.8.3-2_mipsel_24kc.ipk
+Size: 27666
+SHA256sum: 991d6909a23d56396fc6a94e8bf6c89d706860c77a7d1ffb8b9d813b1340cefa
+Description:  Python 3.8 sqlite3 module
+
+Package: python3-unittest
+Version: 3.8.3-2
+Depends: libc, python3-light
+Source: feeds/packages/lang/python/python3
+SourceName: python3-unittest
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 75715
+Filename: python3-unittest_3.8.3-2_mipsel_24kc.ipk
+Size: 76684
+SHA256sum: 617c58866c455c2b412c1e22cb5d6dea1dc2a6baa2c29a53d1c09bede7167c0f
+Description:  Python 3.8 unittest module
+
+Package: python3-urllib
+Version: 3.8.3-2
+Depends: libc, python3-light, python3-email
+Source: feeds/packages/lang/python/python3
+SourceName: python3-urllib
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 50876
+Filename: python3-urllib_3.8.3-2_mipsel_24kc.ipk
+Size: 51868
+SHA256sum: ead8a7a071eed35241670356978e31537d8ad7b654a24de7ec4be1cd3dcc227a
+Description:  Python 3.8 URL library module
+
+Package: python3-xml
+Version: 3.8.3-2
+Depends: libc, python3-light, python3-urllib
+Source: feeds/packages/lang/python/python3
+SourceName: python3-xml
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 197246
+Filename: python3-xml_3.8.3-2_mipsel_24kc.ipk
+Size: 198067
+SHA256sum: 9feeb5313802bcc607867eddc6fd43d1a017e1c8b810f4d90e61c3afcaf3790d
+Description:  Python 3.8 xml libs
+
+Package: python3
+Version: 3.8.3-2
+Depends: libc, python3-light, python3-unittest, python3-ncurses, python3-ctypes, python3-pydoc, python3-logging, python3-multiprocessing, python3-urllib, python3-xml, python3-sqlite3, python3-gdbm, python3-codecs, python3-email, python3-distutils, python3-openssl, python3-cgi, python3-cgitb, python3-dbm, python3-asyncio, python3-lzma, python3-decimal
+Source: feeds/packages/lang/python/python3
+SourceName: python3
+License: Python/2.0
+LicenseFiles: LICENSE Doc/copyright.rst Doc/license.rst Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi_osx/LICENSE Modules/expat/COPYING
+Section: lang
+CPE-ID: cpe:/a:python:python
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 105
+Filename: python3_3.8.3-2_mipsel_24kc.ipk
+Size: 1100
+SHA256sum: be1784f6256dde755880b039a77354a151d76a41c80996f2d277c8496d91fc6e
+Description:  This package contains the (almost) full Python install.
+ It's python3-light + all other packages.
+
+Package: qrencode
+Version: 4.0.2-2
+Depends: libc, libqrencode
+Source: feeds/packages/libs/qrencode
+SourceName: qrencode
+License: LGPL-2.1-or-later
+Section: utils
+Maintainer: Jonathan Bennett <JBennett@incomsystems.biz>
+Architecture: mipsel_24kc
+Installed-Size: 8926
+Filename: qrencode_4.0.2-2_mipsel_24kc.ipk
+Size: 9808
+SHA256sum: 8be1a5b7cf86fe0948a9119d92a356db25e3f1fa31ab3fd9213cc5fa17014c58
+Description:  Qrencode is a C program for encoding data in a QR Code symbol,
+ a kind of 2D symbology that can be scanned by handy terminals such
+ as a mobile phone with CCD. The capacity of QR Code is up to 7000
+ digits or 4000 characters, and is highly robust.
+
+Package: rp-pppoe-common
+Version: 3.14-1
+Depends: libc, ppp
+Source: feeds/packages/net/rp-pppoe
+SourceName: rp-pppoe-common
+License: LGPL-2.0-or-later
+LicenseFiles: doc/LICENSE
+Section: net
+CPE-ID: cpe:/a:roaring_penguin:pppoe
+Architecture: mipsel_24kc
+Installed-Size: 402
+Filename: rp-pppoe-common_3.14-1_mipsel_24kc.ipk
+Size: 1284
+SHA256sum: efc311a22b3677296b72bdf6579e6fee59cd2446560af80aec704c00ec9f5012
+Description:  Dubbed RP-PPPoE, this open-source product is ideal for Linux users with
+ a DSL "modem" whose Internet service provider uses PPPoE.
+ 
+ This package contains files common to server and relay.
+
+Package: rp-pppoe-relay
+Version: 3.14-1
+Depends: libc, rp-pppoe-common
+Source: feeds/packages/net/rp-pppoe
+SourceName: rp-pppoe-relay
+License: LGPL-2.0-or-later
+LicenseFiles: doc/LICENSE
+Section: net
+CPE-ID: cpe:/a:roaring_penguin:pppoe
+Architecture: mipsel_24kc
+Installed-Size: 11115
+Filename: rp-pppoe-relay_3.14-1_mipsel_24kc.ipk
+Size: 11942
+SHA256sum: fe1e25e3becc162ad78a0522a45ad5ffc8ec8558f38b2e760552cedacd4afa2a
+Description:  Dubbed RP-PPPoE, this open-source product is ideal for Linux users with
+ a DSL "modem" whose Internet service provider uses PPPoE.
+ 
+ This package contains pppoe-relay.
+
+Package: rpcbind
+Version: 1.2.5-4
+Depends: libc, libtirpc, libwrap
+Source: feeds/packages/net/rpcbind
+SourceName: rpcbind
+License: BSD-3-Clause
+Section: net
+Require-User: rpc=65533:rpc=65533
+CPE-ID: cpe:/a:rpcbind_project:rpcbind
+Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 22539
+Filename: rpcbind_1.2.5-4_mipsel_24kc.ipk
+Size: 23418
+SHA256sum: c52a2da224a100c29f8a078239f667d4781bdde92730e582f38fc4bdb9f0d61a
+Description:  The rpcbind utility is a server that converts RPC program numbers into universal addresses.
+ It must be running on the host to be able to make RPC calls on a server on that machine.
+ 
+ Rpcbind replaces portmap for NFS v2/v3. It has more features, like ipv6 support.
+ Note: Nfs4 only configurations can run without it.
+
+Package: rpcd-mod-lxc
+Version: 20171206
+Depends: libc, rpcd, liblxc
+Source: feeds/packages/utils/rpcd-mod-lxc
+SourceName: rpcd-mod-lxc
+License: ISC
+Section: libs
+Maintainer: Luka Perkov <luka@openwrt.org>
+Architecture: mipsel_24kc
+Installed-Size: 3189
+Filename: rpcd-mod-lxc_20171206_mipsel_24kc.ipk
+Size: 3893
+SHA256sum: b4fb1690aab099dc2f4cfb4dd7e4ac12f25505773033de3f8fbaae230b9376d2
+Description:  LXC rpcd module
+
+Package: rrdtool1
+Version: 1.0.50-3
+Depends: libc, librrd1
+Source: feeds/packages/utils/rrdtool1
+SourceName: rrdtool1
+Section: utils
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 10568
+Filename: rrdtool1_1.0.50-3_mipsel_24kc.ipk
+Size: 11719
+SHA256sum: 69bcded8b6c14885be2e77814eb6939f346d5f7bf99e1dacb89304247a037bc0
+Description:  RRD is the Acronym for Round Robin Database. RRD is a system to store and
+ display time-series data (i.e. network bandwidth, machine-room temperature,
+ server load average). It stores the data in a very compact way that will
+ not expand over time, and it presents useful graphs by processing the data
+ to enforce a certain data density. It can be used either via simple wrapper
+ scripts (from shell or Perl) or via frontends that poll network devices and
+ put friendly user interface on it.
+ 
+ This is version 1.0.x with cgilib-0.4, gd1.3 and libpng-1.0.9 linked into
+ librrd.so. The library is much smaller compared to the 1.2.x version with
+ separate dynamic linked libraries.
+ This package contains command line tools used to manage RRDs.
+
+Package: shairplay
+Version: 2018-08-24-096b61ad-2
+Depends: libc, libao, libavahi-compat-libdnssd, libltdl7, libpthread
+Source: feeds/packages/sound/shairplay
+SourceName: shairplay
+License: MIT
+LicenseFiles: LICENSE
+Section: sound
+Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 104133
+Filename: shairplay_2018-08-24-096b61ad-2_mipsel_24kc.ipk
+Size: 105115
+SHA256sum: 523b85d5c44a0e2217c4e81f354c4a00623a21566668593f92cdb0cd2f52022c
+Description:  Free portable AirPlay server implementation similar to ShairPort.
+
+Package: shairport-sync-openssl
+Version: 3.3.6-2
+Depends: libc, libpthread, alsa-lib, libconfig11, libdaemon, libpopt0, libopenssl1.1, libavahi-client, libsoxr
+Provides: shairport-sync
+Source: feeds/packages/sound/shairport-sync
+SourceName: shairport-sync-openssl
+License: MIT
+LicenseFiles: COPYING LICENSES shairport.c
+Section: sound
+Maintainer: Ted Hess <thess@kitschensync.net>, Mike Brady <mikebrady@eircom.net>
+Architecture: mipsel_24kc
+Installed-Size: 83704
+Filename: shairport-sync-openssl_3.3.6-2_mipsel_24kc.ipk
+Size: 84773
+SHA256sum: a8cce5a5d66848608fd277a96cfeb114156b5fbd7a582057ca5e605433a63cd6
+Description:  Shairport Sync plays audio from iTunes and AirPlay sources, including
+ iOS devices, Quicktime Player and third party sources such as forkedDaapd.
+ Audio played by a Shairport Sync-powered device stays synchronised with the source
+ and hence with similar devices playing the same source.
+ 
+ Shairport Sync does not support AirPlay video or photo streaming.
+ Ensure Kernel Modules > Sound Support > kmod-sound-core is selected.
+ Also select kmod-usb-audio if you want to use USB-connected sound cards.
+
+Package: shine
+Version: 3.1.1-1
+Depends: libc
+Source: feeds/packages/sound/shine
+SourceName: shine
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: sound
+Maintainer: Nicolas Thill <nico@openwrt.org>
+Architecture: mipsel_24kc
+Installed-Size: 29478
+Filename: shine_3.1.1-1_mipsel_24kc.ipk
+Size: 30257
+SHA256sum: e2c12623027c457c7ec2d65fe93f738a28c25fdf4914b14a21d61709d0e0c5fb
+Description:  savonet/shine is a blazing fast mp3 encoding library implemented in fixed-point
+ arithmetic. The library can thus be used to perform super fast mp3 encoding on
+ architectures without a FPU, such as armel, etc.. It is also, however, also
+ super fast on architectures with a FPU!
+
+Package: simple-adblock
+Version: 1.8.3-13
+Depends: libc, jshn, jsonfilter
+Source: feeds/packages/net/simple-adblock
+SourceName: simple-adblock
+License: GPL-3.0-or-later
+Section: net
+Maintainer: Stan Grishin <stangri@melmac.net>
+Architecture: all
+Installed-Size: 10170
+Filename: simple-adblock_1.8.3-13_all.ipk
+Size: 11356
+SHA256sum: e7b29c89c02fcee747a8cfc01a6a28d0bbc4f9014af9750a4daf7d2ad02a9eee
+Description:  Simple adblock script to block ad or abuse/malware domains with DNSMASQ or Unbound.
+ Script supports local/remote list of domains and hosts-files for both black- and white-listing.
+ Please see https://github.com/openwrt/packages/blob/master/net/simple-adblock/files/README.md for more information.
+ 
+
+Package: smartmontools
+Version: 7.1-3
+Depends: libc, uclibcxx
+Source: feeds/packages/utils/smartmontools
+SourceName: smartmontools
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Section: utils
+Maintainer: Maxim Storchak <m.storchak@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 166467
+Filename: smartmontools_7.1-3_mipsel_24kc.ipk
+Size: 167346
+SHA256sum: 8175f4818e7704f9abed0c2baf4b06dc1995048401ff38bf2da5deeb295f88ab
+Description:  smartmontools contains utility programs (smartctl) to
+ control/monitor storage systems using the Self-Monitoring, Analysis
+ and Reporting Technology System (S.M.A.R.T.) built into most modern
+ ATA and SCSI disks. It is derived from smartsuite.
+
+Package: sqlite3-cli
+Version: 3320100-1
+Depends: libc, libsqlite3-0, libedit
+Source: feeds/packages/libs/sqlite3
+SourceName: sqlite3-cli
+License: PUBLICDOMAIN
+Section: utils
+CPE-ID: cpe:/a:sqlite:sqlite
+Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
+Architecture: mipsel_24kc
+Installed-Size: 77940
+Filename: sqlite3-cli_3320100-1_mipsel_24kc.ipk
+Size: 78860
+SHA256sum: efd01c2a0fd1c18e69877599524c4e2e7b00b5ca74c7d30f6090b0481aaf7938
+Description:  SQLite is a small C library that implements a self-contained, embeddable,
+ zero-configuration SQL database engine.
+ This package contains a terminal-based front-end to the SQLite (v3.x) library
+ that can evaluate queries interactively and display the results in multiple
+ formats.
+
+Package: sqm-scripts
+Version: 1.4.0-8
+Depends: libc, tc, kmod-sched-core, kmod-ifb, iptables, iptables-mod-ipopt, iptables-mod-conntrack-extra, kmod-sched-cake-virtual
+Source: feeds/packages/net/sqm-scripts
+SourceName: sqm-scripts
+License: GPL-2.0-only
+Section: net
+Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
+Architecture: all
+Installed-Size: 17908
+Filename: sqm-scripts_1.4.0-8_all.ipk
+Size: 18791
+SHA256sum: d4baa71510779bc0c7591b9d78b96441716975febd98df6f727962a617da08e3
+Description:  A set of scripts that does simple SQM configuration.
+
+Package: squid
+Version: 4.6-4
+Depends: libc, libpthread, librt, libltdl7, libstdcpp6, libatomic1, libopenssl1.1
+Source: feeds/packages/net/squid
+SourceName: squid
+License: GPL-2.0-or-later
+Section: net
+Require-User: squid=137:squid=137
+CPE-ID: cpe:/a:squid-cache:squid
+Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
+Architecture: mipsel_24kc
+Installed-Size: 1754979
+Filename: squid_4.6-4_mipsel_24kc.ipk
+Size: 1753273
+SHA256sum: d459fac8946d684b775694fbd9e06572e9e2bcb054f500cc1a8dd44a31488cea
+Description:  Squid is a caching proxy for the Web supporting HTTP, HTTPS, FTP, and more.
+ It reduces bandwidth and improves response times by caching and reusing
+ frequently-requested web pages.
+
+Package: strongswan-charon
+Version: 5.8.4-1
+Depends: libc, strongswan
+Source: feeds/packages/net/strongswan
+SourceName: strongswan-charon
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:strongswan:strongswan
+Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
+Architecture: mipsel_24kc
+Installed-Size: 201500
+Filename: strongswan-charon_5.8.4-1_mipsel_24kc.ipk
+Size: 202103
+SHA256sum: 96b39048ac584806a7e353fd7325d1bafe3fff6403c002e5231586f2c77f32a6
+Description:  StrongSwan is an OpenSource IPsec implementation for the Linux operating system.
+ This package contains charon, an IKEv2 keying daemon.
+
+Package: strongswan-ipsec
+Version: 5.8.4-1
+Depends: libc, strongswan
+Source: feeds/packages/net/strongswan
+SourceName: strongswan-ipsec
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:strongswan:strongswan
+Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
+Architecture: mipsel_24kc
+Installed-Size: 3174
+Filename: strongswan-ipsec_5.8.4-1_mipsel_24kc.ipk
+Size: 4027
+SHA256sum: 4c2db4dce8445aa56921a02ff45f19fc083ae9db8e1368d2887832bec38b0e28
+Description:  StrongSwan is an OpenSource IPsec implementation for the Linux operating system.
+ This package contains the ipsec utility.
+
+Package: strongswan-minimal
+Version: 5.8.4-1
+Depends: libc, strongswan, strongswan-charon, strongswan-mod-aes, strongswan-mod-gmp, strongswan-mod-hmac, strongswan-mod-kernel-netlink, strongswan-mod-nonce, strongswan-mod-pubkey, strongswan-mod-random, strongswan-mod-sha1, strongswan-mod-socket-default, strongswan-mod-stroke, strongswan-mod-updown, strongswan-mod-x509, strongswan-mod-xcbc
+Source: feeds/packages/net/strongswan
+SourceName: strongswan-minimal
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:strongswan:strongswan
+Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
+Architecture: mipsel_24kc
+Installed-Size: 105
+Filename: strongswan-minimal_5.8.4-1_mipsel_24kc.ipk
+Size: 1028
+SHA256sum: 9d682b1cfea00d0f12131cb1de68edfd02ab70dc4909dcf11289230cf5541914
+Description:  StrongSwan is an OpenSource IPsec implementation for the Linux operating system.
+ This meta-package contains only dependencies for a minimal IKEv2 setup.
+
+Package: strongswan-mod-aes
+Version: 5.8.4-1
+Depends: libc, strongswan
+Source: feeds/packages/net/strongswan
+SourceName: strongswan-mod-aes
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:strongswan:strongswan
+Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
+Architecture: mipsel_24kc
+Installed-Size: 17406
+Filename: strongswan-mod-aes_5.8.4-1_mipsel_24kc.ipk
+Size: 17645
+SHA256sum: 217eda2f063d63a3dfa64b560c984d550d6a7a53949434b828c305951ea87f55
+Description:  StrongSwan AES crypto plugin
+
+Package: strongswan-mod-gmp
+Version: 5.8.4-1
+Depends: libc, strongswan, libgmp10
+Source: feeds/packages/net/strongswan
+SourceName: strongswan-mod-gmp
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:strongswan:strongswan
+Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
+Architecture: mipsel_24kc
+Installed-Size: 11384
+Filename: strongswan-mod-gmp_5.8.4-1_mipsel_24kc.ipk
+Size: 12177
+SHA256sum: e768ade5f295b54e706392dd4cb34c4c9113b9451d123df5c44d0103aa04bbf7
+Description:  StrongSwan libgmp plugin
+
+Package: strongswan-mod-hmac
+Version: 5.8.4-1
+Depends: libc, strongswan
+Source: feeds/packages/net/strongswan
+SourceName: strongswan-mod-hmac
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:strongswan:strongswan
+Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
+Architecture: mipsel_24kc
+Installed-Size: 2481
+Filename: strongswan-mod-hmac_5.8.4-1_mipsel_24kc.ipk
+Size: 3241
+SHA256sum: 0fe4c3fa1b4bd20d7b0aa9abb710c41bc34ca194ae6f091075a7c4b00338ebb8
+Description:  StrongSwan HMAC crypto plugin
+
+Package: strongswan-mod-kernel-libipsec
+Version: 5.8.4-1
+Depends: libc, strongswan
+Source: feeds/packages/net/strongswan
+SourceName: strongswan-mod-kernel-libipsec
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:strongswan:strongswan
+Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
+Architecture: mipsel_24kc
+Installed-Size: 18023
+Filename: strongswan-mod-kernel-libipsec_5.8.4-1_mipsel_24kc.ipk
+Size: 18824
+SHA256sum: 45addfe003341f2d1c7b3aeca0f32b3115d1aa8166ced6097f630a984772f745
+Description:  StrongSwan libipsec kernel interface plugin
+
+Package: strongswan-mod-kernel-netlink
+Version: 5.8.4-1
+Depends: libc, strongswan
+Source: feeds/packages/net/strongswan
+SourceName: strongswan-mod-kernel-netlink
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:strongswan:strongswan
+Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
+Architecture: mipsel_24kc
+Installed-Size: 32351
+Filename: strongswan-mod-kernel-netlink_5.8.4-1_mipsel_24kc.ipk
+Size: 33168
+SHA256sum: 075ea1531995d022bd7deebe13f3dc8dbdc1fbf713ffb7391a7f607c5a71bac3
+Description:  StrongSwan netlink kernel interface plugin
+
+Package: strongswan-mod-nonce
+Version: 5.8.4-1
+Depends: libc, strongswan
+Source: feeds/packages/net/strongswan
+SourceName: strongswan-mod-nonce
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:strongswan:strongswan
+Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
+Architecture: mipsel_24kc
+Installed-Size: 1665
+Filename: strongswan-mod-nonce_5.8.4-1_mipsel_24kc.ipk
+Size: 2417
+SHA256sum: 0199fc33041d19c9c21e3bdbe6d7af3724ce1fb5f5aaef74c1e150cb90a05e73
+Description:  StrongSwan nonce genereation plugin
+
+Package: strongswan-mod-pubkey
+Version: 5.8.4-1
+Depends: libc, strongswan
+Source: feeds/packages/net/strongswan
+SourceName: strongswan-mod-pubkey
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:strongswan:strongswan
+Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
+Architecture: mipsel_24kc
+Installed-Size: 2510
+Filename: strongswan-mod-pubkey_5.8.4-1_mipsel_24kc.ipk
+Size: 3266
+SHA256sum: 0e0d93103ebcad9283ecf33ebd1664f174e65c93df44ffe26677df2d638021be
+Description:  StrongSwan raw public key plugin
+
+Package: strongswan-mod-random
+Version: 5.8.4-1
+Depends: libc, strongswan
+Source: feeds/packages/net/strongswan
+SourceName: strongswan-mod-random
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:strongswan:strongswan
+Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
+Architecture: mipsel_24kc
+Installed-Size: 2420
+Filename: strongswan-mod-random_5.8.4-1_mipsel_24kc.ipk
+Size: 3167
+SHA256sum: 9c3e083169f1377253f999175b2eddf3f0a704ca80a569203b97859f255c79a3
+Description:  StrongSwan RNG plugin
+
+Package: strongswan-mod-sha1
+Version: 5.8.4-1
+Depends: libc, strongswan
+Source: feeds/packages/net/strongswan
+SourceName: strongswan-mod-sha1
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:strongswan:strongswan
+Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
+Architecture: mipsel_24kc
+Installed-Size: 6302
+Filename: strongswan-mod-sha1_5.8.4-1_mipsel_24kc.ipk
+Size: 7117
+SHA256sum: 24bf28aa9a29730bd358e876059105c7944860edf434c128357574dd3d47c0de
+Description:  StrongSwan SHA1 crypto plugin
+
+Package: strongswan-mod-socket-default
+Version: 5.8.4-1
+Depends: libc, strongswan
+Source: feeds/packages/net/strongswan
+SourceName: strongswan-mod-socket-default
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:strongswan:strongswan
+Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
+Architecture: mipsel_24kc
+Installed-Size: 5152
+Filename: strongswan-mod-socket-default_5.8.4-1_mipsel_24kc.ipk
+Size: 5944
+SHA256sum: a676c95c9376c6beb5f6d45b2de80edd9b5a4dde9a019d9d389ffbad5afdd602
+Description:  StrongSwan default socket implementation for charon plugin
+
+Package: strongswan-mod-stroke
+Version: 5.8.4-1
+Depends: libc, strongswan, strongswan-charon, strongswan-ipsec
+Source: feeds/packages/net/strongswan
+SourceName: strongswan-mod-stroke
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:strongswan:strongswan
+Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
+Architecture: mipsel_24kc
+Installed-Size: 59206
+Filename: strongswan-mod-stroke_5.8.4-1_mipsel_24kc.ipk
+Size: 60099
+SHA256sum: 11977bddf566559908f821d3bace090e4ceb6e9f77113521c1e9773982a948d3
+Description:  StrongSwan Stroke plugin
+
+Package: strongswan-mod-updown
+Version: 5.8.4-1
+Depends: libc, strongswan
+Source: feeds/packages/net/strongswan
+SourceName: strongswan-mod-updown
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:strongswan:strongswan
+Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
+Architecture: mipsel_24kc
+Installed-Size: 8545
+Filename: strongswan-mod-updown_5.8.4-1_mipsel_24kc.ipk
+Size: 9347
+SHA256sum: a4879a542eb71c2498a4827e6612479d03f5e71d7867e01cbcc64d67b941065f
+Description:  StrongSwan updown firewall plugin
+
+Package: strongswan-mod-x509
+Version: 5.8.4-1
+Depends: libc, strongswan
+Source: feeds/packages/net/strongswan
+SourceName: strongswan-mod-x509
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:strongswan:strongswan
+Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
+Architecture: mipsel_24kc
+Installed-Size: 27593
+Filename: strongswan-mod-x509_5.8.4-1_mipsel_24kc.ipk
+Size: 28119
+SHA256sum: 39f61e94b2807f414a831fe38cb79f6f228a22fc90ceca7e25c86a272605e7e5
+Description:  StrongSwan x509 certificate plugin
+
+Package: strongswan-mod-xauth-generic
+Version: 5.8.4-1
+Depends: libc, strongswan
+Source: feeds/packages/net/strongswan
+SourceName: strongswan-mod-xauth-generic
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:strongswan:strongswan
+Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
+Architecture: mipsel_24kc
+Installed-Size: 2735
+Filename: strongswan-mod-xauth-generic_5.8.4-1_mipsel_24kc.ipk
+Size: 3512
+SHA256sum: 84e56070910dde96d6b2630a3f4077bc5aad1f1d2d39184894e8cb74a6a4241d
+Description:  StrongSwan generic XAuth backend plugin
+
+Package: strongswan-mod-xcbc
+Version: 5.8.4-1
+Depends: libc, strongswan
+Source: feeds/packages/net/strongswan
+SourceName: strongswan-mod-xcbc
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:strongswan:strongswan
+Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
+Architecture: mipsel_24kc
+Installed-Size: 3013
+Filename: strongswan-mod-xcbc_5.8.4-1_mipsel_24kc.ipk
+Size: 3781
+SHA256sum: cbd11b641354f40b40011d21b318024743cd5b74f019d4bf31bc336d9b0b5ad8
+Description:  StrongSwan xcbc crypto plugin
+
+Package: strongswan
+Version: 5.8.4-1
+Depends: libc, libpthread, ip, kmod-crypto-authenc, kmod-ipsec, kmod-ipsec4, kmod-ipsec6, kmod-ipt-ipsec, iptables-mod-ipsec
+Source: feeds/packages/net/strongswan
+SourceName: strongswan
+License: GPL-2.0-or-later
+Section: net
+CPE-ID: cpe:/a:strongswan:strongswan
+Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
+Architecture: mipsel_24kc
+Installed-Size: 137901
+Filename: strongswan_5.8.4-1_mipsel_24kc.ipk
+Size: 138470
+SHA256sum: 12b4614723a37d32c21447f1abbc02ce8305f68031d491c5cf1463306b369489
+Description:  StrongSwan is an OpenSource IPsec implementation for the Linux operating system.
+ This package contains shared libraries and scripts.
+
+Package: tinyproxy
+Version: 1.10.0-2
+Depends: libc
+Source: feeds/packages/net/tinyproxy
+SourceName: tinyproxy
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Section: net
+CPE-ID: cpe:/a:banu:tinyproxy
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 29167
+Filename: tinyproxy_1.10.0-2_mipsel_24kc.ipk
+Size: 29963
+SHA256sum: 9091a30a0ce94a625321b52ad24b342bdc3a6a3941219775773032947247af0b
+Description:  Tinyproxy is a lightweight HTTP and HTTPS proxy
+
+Package: transmission-daemon-openssl
+Version: 2.94-8
+Depends: libc, libcurl4, libevent2-7, libminiupnpc, libnatpmp1, libpthread, librt, zlib, libopenssl1.1
+Source: feeds/packages/net/transmission
+SourceName: transmission-daemon-openssl
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Section: net
+Require-User: transmission=224:transmission=224
+CPE-ID: cpe:/a:transmissionbt:transmission
+Maintainer: Rosen Penev <rosenp@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 153359
+Filename: transmission-daemon-openssl_2.94-8_mipsel_24kc.ipk
+Size: 154132
+SHA256sum: a1ccb032540add12e6ffe337ddc5a09e704b215c453b31f00d890ec1a9fb6b11
+Description:  Transmission is a simple BitTorrent client.
+ It features a very simple, intuitive interface
+ on top on an efficient, cross-platform back-end.
+ This package contains the daemon itself.
+
+Package: transmission-web-control
+Version: 2019-07-24-c27e3ba9-1
+Depends: libc, transmission-daemon-openssl
+Conflicts: transmission-web
+Source: feeds/packages/net/transmission-web-control
+SourceName: transmission-web-control
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Architecture: all
+Installed-Size: 1072672
+Filename: transmission-web-control_2019-07-24-c27e3ba9-1_all.ipk
+Size: 1073546
+SHA256sum: 4cdeccee6051565203ac71b7f6d6b4098ba26408f25f80a75dd904ad2fdb2bd0
+Description:  Transmission Web Control is a custom Web UI for Transmission.
+
+Package: travelmate
+Version: 1.5.4-3
+Depends: libc, iwinfo, jshn, jsonfilter, uclient-fetch, dnsmasq
+Source: feeds/packages/net/travelmate
+SourceName: travelmate
+License: GPL-3.0-or-later
+Section: net
+Maintainer: Dirk Brenken <dev@brenken.org>
+Architecture: all
+Installed-Size: 7984
+Filename: travelmate_1.5.4-3_all.ipk
+Size: 8888
+SHA256sum: b2fd60b061d13457562511dc7cefc1ed55e3a610d6a50bd5edce6ffc238bc2e7
+Description:  A wlan connection manager for travel router.
+ Please see https://github.com/openwrt/packages/blob/master/net/travelmate/files/README.md for further information.
+ 
+
+Package: ttyd
+Version: 1.6.0-2
+Depends: libc, libopenssl1.1, libjson-c4, libuv1, zlib, libwebsockets-full
+Source: feeds/packages/utils/ttyd
+SourceName: ttyd
+License: MIT
+LicenseFiles: LICENSE
+Section: utils
+Maintainer: Shuanglei Tao <tsl0922@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 207641
+Filename: ttyd_1.6.0-2_mipsel_24kc.ipk
+Size: 208471
+SHA256sum: ad7511c7357eb27cfea92b1cca1f614ff781e08665863afa089f18ffd99a8aac
+Description:  ttyd is a command-line tool for sharing terminal over the web.
+
+Package: udpxy
+Version: 1.0-24.1-1
+Depends: libc
+Source: feeds/packages/net/udpxy
+SourceName: udpxy
+License: GPL-3.0-or-later
+LicenseFiles: chipmunk/gpl.txt
+Section: net
+Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 27689
+Filename: udpxy_1.0-24.1-1_mipsel_24kc.ipk
+Size: 28637
+SHA256sum: c93c63c1739a5d4e55b1096a4acae172c3737ff334f81830b7d44ef468c760d9
+Description:  udproxy makes it possible to convert UDP IPTV streams into HTTP
+ streams which can be viewed even over WLANs. HTTP streams do
+ not generate huge amounts of multicast traffic, so a sd stream
+ only takes about 300k. Interesting for peoply who have IPTV at
+ home and do not want to rent multiple decoders from their
+ provider but just use their own streaming client (for example
+ popcornhour/mediatomb/vlc).
+
+Package: unbound-daemon
+Version: 1.10.1-4
+Depends: libc, libopenssl1.1, libunbound
+Source: feeds/packages/net/unbound
+SourceName: unbound-daemon
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: net
+Require-User: unbound:unbound
+CPE-ID: cpe:/a:nlnetlabs:unbound
+Maintainer: Eric Luehrsen <ericluehrsen@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 119732
+Filename: unbound-daemon_1.10.1-4_mipsel_24kc.ipk
+Size: 120234
+SHA256sum: d51ec12889a99e52cb8870ac1b375816ec0febf45c4721bb6f74069259354214
+Description:  This package contains the Unbound daemon including 'libevent', 'libmnl', and
+ 'libpthread' to better handle large networks with heavy query loads. Options
+ are available under libraries/network/libunbound to custom trim Unbound for
+ smaller targets.
+
+Package: vnstat
+Version: 1.18-2
+Depends: libc
+Source: feeds/packages/net/vnstat
+SourceName: vnstat
+Section: net
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 67736
+Filename: vnstat_1.18-2_mipsel_24kc.ipk
+Size: 68659
+SHA256sum: 1751b4843c53ccc4018fc843a9596eb386a919756d6bb25c493fac43ccff3715
+Description:  vnStat is a network traffic monitor for Linux that keeps a log of daily
+ network traffic for the selected interface(s). vnStat isn't a packet
+ sniffer. The traffic information is analyzed from the /proc -filesystem,
+ so vnStat can be used without root permissions.
+
+Package: vnstati
+Version: 1.18-2
+Depends: libc, vnstat, libgd
+Source: feeds/packages/net/vnstat
+SourceName: vnstati
+Section: net
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 30756
+Filename: vnstati_1.18-2_mipsel_24kc.ipk
+Size: 31609
+SHA256sum: 8646d4556ba4244c8213ae0d6ffbc4d081ffadffd0e18917974420b4eb7a1a32
+Description:  The purpose of vnstati is to provide image output support for statistics
+ collected using vnstat(1). However, the image file format is limited to
+ png. All basic outputs of vnStat are supported excluding live traffic
+ features. The image can be outputted either to a file or to standard
+ output.
+
+Package: vpnbypass
+Version: 1.3.1-7
+Depends: libc, ipset, iptables
+Source: feeds/packages/net/vpnbypass
+SourceName: vpnbypass
+License: GPL-3.0-or-later
+Section: net
+Maintainer: Stan Grishin <stangri@melmac.net>
+Architecture: all
+Installed-Size: 2376
+Filename: vpnbypass_1.3.1-7_all.ipk
+Size: 3464
+SHA256sum: 0be51ea54a83b27ae586edb4d76babdb547a913a2fc5a2ef430ef8d1fef5501e
+Description:  This service can be used to enable simple VPN split tunnelling.
+ Supports accessing domains, IP ranges outside of your VPN tunnel.
+ Also supports dedicating local ports/IP ranges for direct
+ internet access (outside of your VPN tunnel).
+ Please see the README for further information.
+
+Package: watchcat
+Version: 1-7
+Depends: libc
+Source: feeds/packages/utils/watchcat
+SourceName: watchcat
+License: GPL-2.0
+Section: utils
+Maintainer: Roger D <rogerdammit@gmail.com>
+Architecture: all
+Installed-Size: 2168
+Filename: watchcat_1-7_all.ipk
+Size: 2954
+SHA256sum: 15aa70456f6bc25b0fc166c78669dd5298dc1e6c0e32f0fa9536907e064eafa2
+Description:  Allows to configure a periodically reboot, or after losing internet connectivity. Configured trough UCI /etc/config/system.
+
+Package: wifischedule
+Version: 1-2
+Depends: libc
+Source: feeds/packages/net/wifischedule
+SourceName: wifischedule
+License: PRPL
+Section: net
+Maintainer: Nils Koenig <openwrt@newk.it> 
+Architecture: all
+Installed-Size: 3101
+Filename: wifischedule_1-2_all.ipk
+Size: 3879
+SHA256sum: 105e0080a8188b2fe73558779477a13aa0ff370d83c75629f0e2c5f431edf869
+Description:  Turns WiFi on and off according to a schedule defined in UCI.
+
+Package: zerotier
+Version: 1.4.6-3
+Depends: libc, libpthread, libstdcpp6, kmod-tun, ip, libminiupnpc, libnatpmp1
+Source: feeds/packages/net/zerotier
+SourceName: zerotier
+License: BSL 1.1
+LicenseFiles: LICENSE.txt
+Section: net
+Maintainer: Moritz Warning <moritzwarning@web.de>
+Architecture: mipsel_24kc
+Installed-Size: 363038
+Filename: zerotier_1.4.6-3_mipsel_24kc.ipk
+Size: 362803
+SHA256sum: b08842220358b7ad05501066ebc47614f1552879b0a62eb5dac63a68df57e903
+Description:  ZeroTier creates a global provider-independent virtual private cloud network.
+
+Package: zoneinfo-asia
+Version: 2020a-1
+Depends: libc
+Source: feeds/packages/utils/zoneinfo
+SourceName: zoneinfo-asia
+License: Public Domain
+Section: utils
+Maintainer: Vladimir Ulrich <admin@evl.su>
+Architecture: mipsel_24kc
+Installed-Size: 30971
+Filename: zoneinfo-asia_2020a-1_mipsel_24kc.ipk
+Size: 31375
+SHA256sum: fe07ef6cab2fe7afd17cd56a080477babe11e2fef3bbcb385300554d24b06750
+Description:  Zone Information (Asia)
+
